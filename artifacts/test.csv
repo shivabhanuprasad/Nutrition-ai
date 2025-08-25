@@ -1,0 +1,801 @@
+Meal_ID,Dish_Name,Cuisine_Type,Meal_Type,Dietary_Preference,Main_Ingredients,Calories_per_Serving,Protein_Content(g),Difficulty_Level,Occasion_Type
+M0556,Pongal,South Indian,Breakfast,Gluten-Free,"Rice, Moong Dal, Ghee",678,22,Easy,Party
+M3492,Chilli Chicken,Indo-Chinese,Snack,Vegetarian,"Chicken, Capsicum, Spices",231,42,Easy,Restaurant-Special
+M0528,Idli Sambar,South Indian,Breakfast,Vegetarian,"Rice, Lentils, Vegetables",374,32,Hard,Festive
+M3926,Hakka Noodles,Indo-Chinese,Snack,Keto,"Noodles, Vegetables, Soy Sauce",767,36,Medium,Daily
+M2990,Hakka Noodles,Indo-Chinese,Dinner,High-Protein,"Noodles, Vegetables, Soy Sauce",862,31,Hard,Party
+M0071,Rasam Rice,South Indian,Breakfast,Gluten-Free,"Tamarind, Tomato, Spices",398,28,Medium,Restaurant-Special
+M1757,Paneer Butter Masala,North Indian,Breakfast,Vegan,"Paneer, Tomato, Spices",367,29,Medium,Festive
+M0212,Rasam Rice,South Indian,Snack,Vegan,"Tamarind, Tomato, Spices",619,30,Easy,Party
+M0197,Fish Curry,South Indian,Snack,Vegetarian,"Fish, Tamarind, Spices",882,23,Medium,Festive
+M0804,Fish Curry,South Indian,Dinner,High-Protein,"Fish, Tamarind, Spices",458,17,Easy,Party
+M3410,American Chopsuey,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Sauce",494,22,Hard,Festive
+M3837,Chicken Fried Rice,Indo-Chinese,Breakfast,Non-Vegetarian,"Rice, Chicken, Soy Sauce",893,27,Easy,Party
+M1147,Lemon Rice,South Indian,Breakfast,High-Protein,"Rice, Lemon, Spices",420,9,Easy,Festive
+M1499,Rajma Chawal,North Indian,Snack,Gluten-Free,"Rajma, Rice, Spices",178,23,Medium,Party
+M3859,Chicken Fried Rice,Indo-Chinese,Lunch,Non-Vegetarian,"Rice, Chicken, Soy Sauce",272,19,Hard,Festive
+M3483,Schezwan Noodles,Indo-Chinese,Dinner,Gluten-Free,"Noodles, Vegetables, Schezwan Sauce",424,28,Easy,Party
+M1186,Vada,South Indian,Dinner,High-Protein,"Lentils, Spices",692,20,Hard,Festive
+M0472,Lemon Rice,South Indian,Dinner,High-Protein,"Rice, Lemon, Spices",884,45,Hard,Party
+M0595,Lemon Rice,South Indian,Lunch,High-Protein,"Rice, Lemon, Spices",429,13,Hard,Party
+M0322,Upma,South Indian,Lunch,High-Protein,"Rava, Vegetables, Spices",151,32,Medium,Party
+M1418,Curd Rice,South Indian,Lunch,Keto,"Rice, Curd, Spices",561,4,Medium,Festive
+M1675,Biryani,North Indian,Lunch,Vegan,"Rice, Meat/Vegetables, Spices",875,8,Easy,Festive
+M3591,Veg Fried Rice,Indo-Chinese,Breakfast,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",196,21,Easy,Restaurant-Special
+M1704,Rajma Chawal,North Indian,Breakfast,High-Protein,"Rajma, Rice, Spices",629,37,Medium,Party
+M2541,Chilli Chicken,Indo-Chinese,Snack,Vegan,"Chicken, Capsicum, Spices",465,33,Easy,Festive
+M0206,Upma,South Indian,Dinner,High-Protein,"Rava, Vegetables, Spices",582,24,Hard,Festive
+M3888,Chilli Chicken,Indo-Chinese,Dinner,High-Protein,"Chicken, Capsicum, Spices",252,6,Hard,Daily
+M3249,Gobi Manchurian,Indo-Chinese,Snack,Non-Vegetarian,"Cauliflower, Maida, Spices",203,42,Hard,Festive
+M2132,Aloo Paratha,North Indian,Lunch,High-Protein,"Wheat, Potato, Spices",791,24,Easy,Daily
+M1256,Curd Rice,South Indian,Breakfast,Vegetarian,"Rice, Curd, Spices",233,14,Easy,Restaurant-Special
+M2300,Butter Chicken,North Indian,Lunch,Gluten-Free,"Chicken, Butter, Tomato",342,3,Easy,Festive
+M1227,Vada,South Indian,Dinner,Vegetarian,"Lentils, Spices",334,40,Hard,Daily
+M3919,Chilli Chicken,Indo-Chinese,Dinner,Non-Vegetarian,"Chicken, Capsicum, Spices",700,25,Medium,Festive
+M2465,Gobi Manchurian,Indo-Chinese,Snack,Keto,"Cauliflower, Maida, Spices",763,10,Medium,Restaurant-Special
+M2384,Paneer Butter Masala,North Indian,Lunch,Non-Vegetarian,"Paneer, Tomato, Spices",157,34,Hard,Daily
+M0150,Curd Rice,South Indian,Breakfast,Gluten-Free,"Rice, Curd, Spices",504,20,Hard,Party
+M0870,Chicken Chettinad,South Indian,Snack,Non-Vegetarian,"Chicken, Coconut, Spices",724,24,Medium,Party
+M1979,Aloo Paratha,North Indian,Breakfast,Vegan,"Wheat, Potato, Spices",470,27,Hard,Daily
+M2457,Schezwan Noodles,Indo-Chinese,Lunch,High-Protein,"Noodles, Vegetables, Schezwan Sauce",175,19,Medium,Party
+M3866,Chicken Manchurian,Indo-Chinese,Snack,Non-Vegetarian,"Chicken, Maida, Spices",500,31,Easy,Party
+M2213,Baingan Bharta,North Indian,Dinner,Non-Vegetarian,"Brinjal, Onion, Tomato",377,7,Medium,Party
+M1007,Upma,South Indian,Dinner,Vegetarian,"Rava, Vegetables, Spices",213,33,Medium,Restaurant-Special
+M3048,American Chopsuey,Indo-Chinese,Snack,Keto,"Noodles, Vegetables, Sauce",369,22,Hard,Restaurant-Special
+M0706,Upma,South Indian,Breakfast,High-Protein,"Rava, Vegetables, Spices",440,11,Medium,Daily
+M3144,Hakka Noodles,Indo-Chinese,Dinner,Keto,"Noodles, Vegetables, Soy Sauce",347,20,Easy,Restaurant-Special
+M3597,Veg Fried Rice,Indo-Chinese,Lunch,Vegan,"Rice, Mixed Veg, Soy Sauce",244,41,Medium,Party
+M1988,Rajma Chawal,North Indian,Dinner,Non-Vegetarian,"Rajma, Rice, Spices",625,23,Medium,Festive
+M0180,Lemon Rice,South Indian,Snack,Keto,"Rice, Lemon, Spices",173,35,Medium,Daily
+M0110,Curd Rice,South Indian,Snack,Vegan,"Rice, Curd, Spices",870,41,Easy,Festive
+M3079,Chicken Fried Rice,Indo-Chinese,Lunch,Vegan,"Rice, Chicken, Soy Sauce",157,45,Easy,Daily
+M1056,Chicken Chettinad,South Indian,Dinner,High-Protein,"Chicken, Coconut, Spices",713,8,Easy,Party
+M3953,American Chopsuey,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Sauce",389,18,Hard,Restaurant-Special
+M0315,Pongal,South Indian,Dinner,Vegan,"Rice, Moong Dal, Ghee",621,45,Hard,Party
+M1823,Baingan Bharta,North Indian,Snack,High-Protein,"Brinjal, Onion, Tomato",258,22,Medium,Restaurant-Special
+M0568,Rasam Rice,South Indian,Lunch,Non-Vegetarian,"Tamarind, Tomato, Spices",777,19,Medium,Party
+M0880,Fish Curry,South Indian,Dinner,Vegetarian,"Fish, Tamarind, Spices",218,22,Medium,Restaurant-Special
+M2231,Butter Chicken,North Indian,Breakfast,Gluten-Free,"Chicken, Butter, Tomato",649,15,Medium,Daily
+M1412,Rasam Rice,South Indian,Snack,Keto,"Tamarind, Tomato, Spices",218,27,Medium,Restaurant-Special
+M3225,Hakka Noodles,Indo-Chinese,Dinner,Non-Vegetarian,"Noodles, Vegetables, Soy Sauce",707,16,Medium,Festive
+M3937,Hakka Noodles,Indo-Chinese,Breakfast,High-Protein,"Noodles, Vegetables, Soy Sauce",827,11,Medium,Party
+M3250,Chilli Chicken,Indo-Chinese,Snack,High-Protein,"Chicken, Capsicum, Spices",608,12,Medium,Festive
+M0930,Upma,South Indian,Dinner,High-Protein,"Rava, Vegetables, Spices",288,25,Medium,Restaurant-Special
+M2579,Hakka Noodles,Indo-Chinese,Breakfast,Gluten-Free,"Noodles, Vegetables, Soy Sauce",447,27,Easy,Restaurant-Special
+M3380,Paneer Chilli,Indo-Chinese,Dinner,Vegetarian,"Paneer, Capsicum, Soy Sauce",516,14,Hard,Festive
+M2293,Palak Paneer,North Indian,Dinner,Vegetarian,"Spinach, Paneer, Spices",790,12,Easy,Festive
+M1503,Biryani,North Indian,Lunch,Gluten-Free,"Rice, Meat/Vegetables, Spices",729,9,Hard,Party
+M3783,Hakka Noodles,Indo-Chinese,Lunch,Vegan,"Noodles, Vegetables, Soy Sauce",822,33,Medium,Festive
+M0606,Rasam Rice,South Indian,Snack,Non-Vegetarian,"Tamarind, Tomato, Spices",236,40,Easy,Festive
+M1989,Biryani,North Indian,Lunch,Keto,"Rice, Meat/Vegetables, Spices",466,16,Easy,Restaurant-Special
+M0015,Rasam Rice,South Indian,Snack,Vegetarian,"Tamarind, Tomato, Spices",676,33,Easy,Restaurant-Special
+M1262,Curd Rice,South Indian,Snack,High-Protein,"Rice, Curd, Spices",564,37,Hard,Daily
+M3239,Chicken Manchurian,Indo-Chinese,Snack,Vegan,"Chicken, Maida, Spices",333,36,Easy,Party
+M3319,Chicken Manchurian,Indo-Chinese,Dinner,High-Protein,"Chicken, Maida, Spices",835,3,Hard,Festive
+M0009,Lemon Rice,South Indian,Lunch,High-Protein,"Rice, Lemon, Spices",287,12,Medium,Festive
+M0890,Pongal,South Indian,Lunch,Vegan,"Rice, Moong Dal, Ghee",747,12,Hard,Party
+M3149,Gobi Manchurian,Indo-Chinese,Lunch,Vegetarian,"Cauliflower, Maida, Spices",551,35,Medium,Party
+M3552,Veg Spring Rolls,Indo-Chinese,Breakfast,Keto,"Vegetables, Maida, Spices",449,30,Hard,Party
+M1445,Biryani,North Indian,Breakfast,Gluten-Free,"Rice, Meat/Vegetables, Spices",865,18,Easy,Restaurant-Special
+M0394,Idli Sambar,South Indian,Dinner,High-Protein,"Rice, Lentils, Vegetables",290,40,Medium,Restaurant-Special
+M1583,Butter Chicken,North Indian,Snack,Non-Vegetarian,"Chicken, Butter, Tomato",571,31,Hard,Daily
+M2859,Chilli Chicken,Indo-Chinese,Dinner,Gluten-Free,"Chicken, Capsicum, Spices",492,15,Easy,Party
+M0539,Fish Curry,South Indian,Dinner,Gluten-Free,"Fish, Tamarind, Spices",376,41,Easy,Festive
+M1488,Butter Chicken,North Indian,Lunch,Keto,"Chicken, Butter, Tomato",882,40,Medium,Restaurant-Special
+M0808,Pongal,South Indian,Lunch,Vegetarian,"Rice, Moong Dal, Ghee",619,22,Hard,Party
+M3415,Veg Fried Rice,Indo-Chinese,Dinner,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",710,33,Hard,Party
+M0799,Pongal,South Indian,Lunch,Gluten-Free,"Rice, Moong Dal, Ghee",868,26,Medium,Restaurant-Special
+M3540,Chilli Chicken,Indo-Chinese,Dinner,Non-Vegetarian,"Chicken, Capsicum, Spices",750,37,Medium,Restaurant-Special
+M1816,Dal Makhani,North Indian,Snack,High-Protein,"Urad Dal, Butter, Cream",767,25,Medium,Daily
+M2330,Baingan Bharta,North Indian,Breakfast,High-Protein,"Brinjal, Onion, Tomato",396,24,Hard,Daily
+M2648,Paneer Chilli,Indo-Chinese,Dinner,Gluten-Free,"Paneer, Capsicum, Soy Sauce",215,7,Hard,Festive
+M1425,Upma,South Indian,Dinner,Vegetarian,"Rava, Vegetables, Spices",773,45,Easy,Festive
+M2360,Rajma Chawal,North Indian,Lunch,Vegetarian,"Rajma, Rice, Spices",823,10,Easy,Festive
+M3322,Paneer Chilli,Indo-Chinese,Snack,Keto,"Paneer, Capsicum, Soy Sauce",203,17,Easy,Party
+M0788,Fish Curry,South Indian,Lunch,Vegan,"Fish, Tamarind, Spices",365,21,Easy,Party
+M1993,Palak Paneer,North Indian,Lunch,Gluten-Free,"Spinach, Paneer, Spices",879,19,Medium,Restaurant-Special
+M1117,Vada,South Indian,Breakfast,Non-Vegetarian,"Lentils, Spices",393,18,Hard,Restaurant-Special
+M1321,Pongal,South Indian,Snack,Gluten-Free,"Rice, Moong Dal, Ghee",313,13,Hard,Festive
+M3657,Paneer Chilli,Indo-Chinese,Snack,Gluten-Free,"Paneer, Capsicum, Soy Sauce",599,10,Easy,Festive
+M1553,Dal Makhani,North Indian,Lunch,Gluten-Free,"Urad Dal, Butter, Cream",747,4,Medium,Festive
+M0033,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",514,32,Medium,Daily
+M0464,Idli Sambar,South Indian,Lunch,Gluten-Free,"Rice, Lentils, Vegetables",787,13,Hard,Party
+M2516,American Chopsuey,Indo-Chinese,Lunch,High-Protein,"Noodles, Vegetables, Sauce",765,9,Easy,Restaurant-Special
+M2296,Aloo Paratha,North Indian,Snack,Vegetarian,"Wheat, Potato, Spices",494,24,Hard,Party
+M0167,Vada,South Indian,Breakfast,Vegan,"Lentils, Spices",889,18,Medium,Party
+M2863,Paneer Chilli,Indo-Chinese,Snack,Vegetarian,"Paneer, Capsicum, Soy Sauce",345,17,Medium,Party
+M0415,Pongal,South Indian,Dinner,Keto,"Rice, Moong Dal, Ghee",552,29,Hard,Daily
+M0034,Pongal,South Indian,Lunch,Gluten-Free,"Rice, Moong Dal, Ghee",202,21,Easy,Restaurant-Special
+M0185,Idli Sambar,South Indian,Lunch,Vegan,"Rice, Lentils, Vegetables",869,21,Easy,Daily
+M3023,Veg Fried Rice,Indo-Chinese,Breakfast,Vegetarian,"Rice, Mixed Veg, Soy Sauce",389,27,Easy,Festive
+M3241,Hakka Noodles,Indo-Chinese,Lunch,Non-Vegetarian,"Noodles, Vegetables, Soy Sauce",486,21,Easy,Party
+M3302,Hakka Noodles,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Soy Sauce",304,7,Medium,Party
+M1953,Butter Chicken,North Indian,Lunch,High-Protein,"Chicken, Butter, Tomato",446,45,Easy,Restaurant-Special
+M3750,Hakka Noodles,Indo-Chinese,Breakfast,Gluten-Free,"Noodles, Vegetables, Soy Sauce",650,35,Hard,Festive
+M1622,Paneer Butter Masala,North Indian,Dinner,High-Protein,"Paneer, Tomato, Spices",701,16,Medium,Restaurant-Special
+M1243,Idli Sambar,South Indian,Lunch,Vegetarian,"Rice, Lentils, Vegetables",848,43,Hard,Restaurant-Special
+M3550,Veg Spring Rolls,Indo-Chinese,Snack,Keto,"Vegetables, Maida, Spices",842,7,Easy,Festive
+M0722,Idli Sambar,South Indian,Snack,Gluten-Free,"Rice, Lentils, Vegetables",203,22,Easy,Party
+M1175,Chicken Chettinad,South Indian,Dinner,High-Protein,"Chicken, Coconut, Spices",467,35,Medium,Daily
+M0671,Rasam Rice,South Indian,Lunch,Keto,"Tamarind, Tomato, Spices",226,26,Medium,Restaurant-Special
+M3332,Hakka Noodles,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Soy Sauce",316,25,Medium,Party
+M1747,Kadhi Pakora,North Indian,Breakfast,Gluten-Free,"Besan, Curd, Spices",202,11,Hard,Festive
+M2425,Veg Spring Rolls,Indo-Chinese,Snack,Gluten-Free,"Vegetables, Maida, Spices",488,6,Easy,Party
+M1557,Butter Chicken,North Indian,Lunch,Gluten-Free,"Chicken, Butter, Tomato",802,39,Medium,Festive
+M2867,Schezwan Noodles,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Schezwan Sauce",701,23,Medium,Restaurant-Special
+M3537,Veg Spring Rolls,Indo-Chinese,Dinner,High-Protein,"Vegetables, Maida, Spices",825,10,Easy,Daily
+M2585,American Chopsuey,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Sauce",524,9,Easy,Daily
+M1745,Biryani,North Indian,Lunch,Vegetarian,"Rice, Meat/Vegetables, Spices",800,20,Easy,Restaurant-Special
+M3868,Veg Fried Rice,Indo-Chinese,Breakfast,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",898,37,Easy,Daily
+M0719,Curd Rice,South Indian,Dinner,Keto,"Rice, Curd, Spices",387,29,Easy,Party
+M1371,Upma,South Indian,Dinner,Vegetarian,"Rava, Vegetables, Spices",448,12,Hard,Party
+M2980,Veg Spring Rolls,Indo-Chinese,Dinner,Non-Vegetarian,"Vegetables, Maida, Spices",727,33,Hard,Festive
+M3931,Veg Spring Rolls,Indo-Chinese,Lunch,Non-Vegetarian,"Vegetables, Maida, Spices",696,42,Hard,Party
+M2021,Rajma Chawal,North Indian,Breakfast,Keto,"Rajma, Rice, Spices",316,14,Hard,Festive
+M2611,Chilli Chicken,Indo-Chinese,Dinner,Non-Vegetarian,"Chicken, Capsicum, Spices",446,39,Easy,Party
+M1627,Biryani,North Indian,Dinner,Keto,"Rice, Meat/Vegetables, Spices",721,9,Easy,Festive
+M2426,Chicken Manchurian,Indo-Chinese,Breakfast,Keto,"Chicken, Maida, Spices",738,26,Medium,Restaurant-Special
+M3054,Hakka Noodles,Indo-Chinese,Dinner,Gluten-Free,"Noodles, Vegetables, Soy Sauce",152,23,Hard,Festive
+M3008,Veg Spring Rolls,Indo-Chinese,Breakfast,Non-Vegetarian,"Vegetables, Maida, Spices",399,9,Hard,Daily
+M0600,Rasam Rice,South Indian,Snack,Vegetarian,"Tamarind, Tomato, Spices",252,32,Hard,Restaurant-Special
+M1748,Palak Paneer,North Indian,Lunch,Non-Vegetarian,"Spinach, Paneer, Spices",501,24,Hard,Restaurant-Special
+M2352,Chole Bhature,North Indian,Snack,Keto,"Chickpeas, Maida, Spices",338,32,Medium,Party
+M1430,Fish Curry,South Indian,Dinner,Non-Vegetarian,"Fish, Tamarind, Spices",434,27,Easy,Party
+M1115,Lemon Rice,South Indian,Lunch,Gluten-Free,"Rice, Lemon, Spices",540,15,Medium,Party
+M0643,Curd Rice,South Indian,Snack,Non-Vegetarian,"Rice, Curd, Spices",535,23,Hard,Party
+M0403,Rasam Rice,South Indian,Breakfast,Non-Vegetarian,"Tamarind, Tomato, Spices",235,20,Easy,Restaurant-Special
+M0491,Lemon Rice,South Indian,Lunch,Non-Vegetarian,"Rice, Lemon, Spices",888,16,Hard,Party
+M2500,Chicken Fried Rice,Indo-Chinese,Snack,Gluten-Free,"Rice, Chicken, Soy Sauce",357,15,Easy,Party
+M1004,Upma,South Indian,Breakfast,Vegetarian,"Rava, Vegetables, Spices",705,34,Easy,Festive
+M2115,Dal Makhani,North Indian,Lunch,Vegan,"Urad Dal, Butter, Cream",265,7,Easy,Daily
+M3485,Hakka Noodles,Indo-Chinese,Breakfast,Keto,"Noodles, Vegetables, Soy Sauce",399,33,Easy,Festive
+M1879,Chole Bhature,North Indian,Lunch,Gluten-Free,"Chickpeas, Maida, Spices",259,18,Medium,Restaurant-Special
+M2474,American Chopsuey,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Sauce",704,5,Medium,Daily
+M0271,Lemon Rice,South Indian,Breakfast,Vegetarian,"Rice, Lemon, Spices",601,17,Medium,Daily
+M2342,Baingan Bharta,North Indian,Dinner,Vegetarian,"Brinjal, Onion, Tomato",184,26,Medium,Festive
+M3059,Chicken Fried Rice,Indo-Chinese,Lunch,Vegetarian,"Rice, Chicken, Soy Sauce",734,44,Medium,Festive
+M3199,Chicken Manchurian,Indo-Chinese,Breakfast,Keto,"Chicken, Maida, Spices",798,44,Easy,Daily
+M1045,Vada,South Indian,Dinner,Gluten-Free,"Lentils, Spices",300,39,Hard,Festive
+M3498,Chicken Manchurian,Indo-Chinese,Lunch,Vegetarian,"Chicken, Maida, Spices",536,27,Easy,Party
+M2794,Veg Fried Rice,Indo-Chinese,Snack,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",250,31,Medium,Daily
+M2393,Palak Paneer,North Indian,Lunch,Gluten-Free,"Spinach, Paneer, Spices",880,8,Medium,Restaurant-Special
+M3471,American Chopsuey,Indo-Chinese,Lunch,Vegetarian,"Noodles, Vegetables, Sauce",500,35,Easy,Daily
+M3838,Hakka Noodles,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Soy Sauce",277,3,Easy,Festive
+M2359,Biryani,North Indian,Breakfast,Vegetarian,"Rice, Meat/Vegetables, Spices",389,17,Hard,Restaurant-Special
+M2335,Paneer Butter Masala,North Indian,Dinner,Vegetarian,"Paneer, Tomato, Spices",783,10,Hard,Festive
+M0018,Pongal,South Indian,Breakfast,Vegan,"Rice, Moong Dal, Ghee",760,42,Easy,Festive
+M3655,Veg Spring Rolls,Indo-Chinese,Dinner,Vegan,"Vegetables, Maida, Spices",318,18,Medium,Festive
+M1211,Pongal,South Indian,Dinner,Vegetarian,"Rice, Moong Dal, Ghee",796,40,Easy,Daily
+M2118,Chole Bhature,North Indian,Snack,High-Protein,"Chickpeas, Maida, Spices",269,7,Medium,Daily
+M0230,Vada,South Indian,Lunch,Keto,"Lentils, Spices",380,8,Medium,Festive
+M1118,Fish Curry,South Indian,Snack,High-Protein,"Fish, Tamarind, Spices",538,30,Medium,Festive
+M1293,Pongal,South Indian,Dinner,Vegan,"Rice, Moong Dal, Ghee",180,13,Medium,Party
+M0496,Vada,South Indian,Breakfast,Non-Vegetarian,"Lentils, Spices",316,25,Medium,Restaurant-Special
+M3545,Veg Fried Rice,Indo-Chinese,Breakfast,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",645,39,Easy,Daily
+M0462,Masala Dosa,South Indian,Breakfast,Vegetarian,"Rice, Lentils, Potato",166,5,Easy,Restaurant-Special
+M2904,Veg Spring Rolls,Indo-Chinese,Dinner,Non-Vegetarian,"Vegetables, Maida, Spices",618,17,Medium,Restaurant-Special
+M1564,Biryani,North Indian,Snack,High-Protein,"Rice, Meat/Vegetables, Spices",174,44,Medium,Restaurant-Special
+M2554,Chilli Chicken,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Capsicum, Spices",570,29,Easy,Festive
+M0319,Chicken Chettinad,South Indian,Lunch,Keto,"Chicken, Coconut, Spices",376,43,Easy,Festive
+M2454,Veg Fried Rice,Indo-Chinese,Breakfast,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",578,40,Medium,Party
+M3266,Chilli Chicken,Indo-Chinese,Dinner,Vegetarian,"Chicken, Capsicum, Spices",600,31,Easy,Festive
+M2453,Veg Fried Rice,Indo-Chinese,Dinner,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",492,44,Hard,Party
+M1492,Aloo Paratha,North Indian,Dinner,Gluten-Free,"Wheat, Potato, Spices",770,21,Medium,Party
+M3573,Veg Fried Rice,Indo-Chinese,Lunch,Vegetarian,"Rice, Mixed Veg, Soy Sauce",319,38,Hard,Daily
+M1290,Idli Sambar,South Indian,Snack,Vegan,"Rice, Lentils, Vegetables",255,29,Easy,Daily
+M3323,American Chopsuey,Indo-Chinese,Snack,Vegetarian,"Noodles, Vegetables, Sauce",583,39,Medium,Restaurant-Special
+M3519,Veg Fried Rice,Indo-Chinese,Dinner,Vegan,"Rice, Mixed Veg, Soy Sauce",453,24,Hard,Party
+M3394,Gobi Manchurian,Indo-Chinese,Lunch,Non-Vegetarian,"Cauliflower, Maida, Spices",734,35,Medium,Festive
+M2234,Palak Paneer,North Indian,Dinner,Gluten-Free,"Spinach, Paneer, Spices",203,21,Easy,Festive
+M0658,Lemon Rice,South Indian,Breakfast,Keto,"Rice, Lemon, Spices",750,7,Medium,Daily
+M1057,Rasam Rice,South Indian,Breakfast,Vegan,"Tamarind, Tomato, Spices",475,32,Easy,Party
+M2120,Aloo Paratha,North Indian,Breakfast,Vegan,"Wheat, Potato, Spices",856,28,Easy,Festive
+M3195,Chicken Manchurian,Indo-Chinese,Dinner,Gluten-Free,"Chicken, Maida, Spices",582,35,Easy,Party
+M3895,Schezwan Noodles,Indo-Chinese,Dinner,Gluten-Free,"Noodles, Vegetables, Schezwan Sauce",847,31,Easy,Festive
+M1663,Rajma Chawal,North Indian,Dinner,Gluten-Free,"Rajma, Rice, Spices",365,21,Hard,Restaurant-Special
+M1331,Rasam Rice,South Indian,Snack,Keto,"Tamarind, Tomato, Spices",644,26,Medium,Restaurant-Special
+M1179,Masala Dosa,South Indian,Dinner,Non-Vegetarian,"Rice, Lentils, Potato",886,5,Easy,Festive
+M3721,American Chopsuey,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Sauce",318,28,Medium,Party
+M2158,Baingan Bharta,North Indian,Dinner,High-Protein,"Brinjal, Onion, Tomato",694,7,Hard,Party
+M0299,Chicken Chettinad,South Indian,Breakfast,Vegan,"Chicken, Coconut, Spices",521,9,Medium,Daily
+M0094,Upma,South Indian,Snack,Gluten-Free,"Rava, Vegetables, Spices",265,15,Medium,Party
+M2405,Chicken Manchurian,Indo-Chinese,Snack,Vegetarian,"Chicken, Maida, Spices",830,28,Easy,Festive
+M3549,Gobi Manchurian,Indo-Chinese,Lunch,Vegan,"Cauliflower, Maida, Spices",847,12,Hard,Daily
+M1576,Biryani,North Indian,Breakfast,Vegan,"Rice, Meat/Vegetables, Spices",865,42,Hard,Festive
+M3746,Schezwan Noodles,Indo-Chinese,Lunch,Keto,"Noodles, Vegetables, Schezwan Sauce",320,40,Medium,Festive
+M2887,Schezwan Noodles,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Schezwan Sauce",434,13,Hard,Daily
+M1794,Baingan Bharta,North Indian,Breakfast,Vegan,"Brinjal, Onion, Tomato",475,21,Medium,Restaurant-Special
+M0024,Vada,South Indian,Dinner,Vegetarian,"Lentils, Spices",440,4,Hard,Restaurant-Special
+M3351,Veg Spring Rolls,Indo-Chinese,Breakfast,High-Protein,"Vegetables, Maida, Spices",876,21,Medium,Party
+M3624,Veg Fried Rice,Indo-Chinese,Dinner,Vegan,"Rice, Mixed Veg, Soy Sauce",560,6,Easy,Festive
+M1732,Palak Paneer,North Indian,Snack,Non-Vegetarian,"Spinach, Paneer, Spices",636,11,Hard,Daily
+M1085,Lemon Rice,South Indian,Dinner,Vegan,"Rice, Lemon, Spices",762,38,Easy,Party
+M3992,Chicken Manchurian,Indo-Chinese,Lunch,Vegan,"Chicken, Maida, Spices",610,9,Medium,Daily
+M2666,Gobi Manchurian,Indo-Chinese,Dinner,High-Protein,"Cauliflower, Maida, Spices",270,43,Hard,Festive
+M2379,Aloo Paratha,North Indian,Dinner,Vegetarian,"Wheat, Potato, Spices",254,44,Easy,Restaurant-Special
+M1273,Pongal,South Indian,Dinner,Gluten-Free,"Rice, Moong Dal, Ghee",491,34,Medium,Daily
+M0306,Fish Curry,South Indian,Breakfast,Gluten-Free,"Fish, Tamarind, Spices",292,9,Medium,Festive
+M2903,Paneer Chilli,Indo-Chinese,Lunch,Keto,"Paneer, Capsicum, Soy Sauce",152,35,Easy,Daily
+M2762,Chilli Chicken,Indo-Chinese,Breakfast,Gluten-Free,"Chicken, Capsicum, Spices",626,33,Easy,Daily
+M0599,Lemon Rice,South Indian,Breakfast,Gluten-Free,"Rice, Lemon, Spices",868,11,Hard,Daily
+M3880,Chicken Manchurian,Indo-Chinese,Lunch,Vegetarian,"Chicken, Maida, Spices",434,43,Hard,Festive
+M0872,Masala Dosa,South Indian,Dinner,High-Protein,"Rice, Lentils, Potato",294,9,Hard,Party
+M2546,Gobi Manchurian,Indo-Chinese,Breakfast,High-Protein,"Cauliflower, Maida, Spices",835,19,Easy,Festive
+M2122,Biryani,North Indian,Snack,High-Protein,"Rice, Meat/Vegetables, Spices",624,19,Easy,Festive
+M1361,Pongal,South Indian,Dinner,Keto,"Rice, Moong Dal, Ghee",776,36,Medium,Daily
+M1937,Palak Paneer,North Indian,Breakfast,Vegetarian,"Spinach, Paneer, Spices",238,15,Easy,Restaurant-Special
+M2759,Chilli Chicken,Indo-Chinese,Breakfast,Vegetarian,"Chicken, Capsicum, Spices",272,14,Hard,Party
+M3645,Chilli Chicken,Indo-Chinese,Breakfast,Keto,"Chicken, Capsicum, Spices",678,36,Medium,Restaurant-Special
+M1540,Baingan Bharta,North Indian,Dinner,Vegan,"Brinjal, Onion, Tomato",827,28,Hard,Daily
+M2211,Butter Chicken,North Indian,Dinner,Vegan,"Chicken, Butter, Tomato",595,42,Medium,Daily
+M1053,Idli Sambar,South Indian,Dinner,Vegetarian,"Rice, Lentils, Vegetables",460,23,Medium,Daily
+M1567,Kadhi Pakora,North Indian,Dinner,High-Protein,"Besan, Curd, Spices",376,28,Easy,Restaurant-Special
+M3247,Chicken Fried Rice,Indo-Chinese,Dinner,Keto,"Rice, Chicken, Soy Sauce",177,21,Easy,Festive
+M1927,Dal Makhani,North Indian,Snack,High-Protein,"Urad Dal, Butter, Cream",419,8,Hard,Party
+M2024,Baingan Bharta,North Indian,Breakfast,Vegan,"Brinjal, Onion, Tomato",768,30,Hard,Festive
+M0409,Vada,South Indian,Dinner,Keto,"Lentils, Spices",162,35,Medium,Daily
+M0100,Upma,South Indian,Lunch,Keto,"Rava, Vegetables, Spices",507,7,Hard,Restaurant-Special
+M1212,Upma,South Indian,Snack,Non-Vegetarian,"Rava, Vegetables, Spices",302,9,Easy,Festive
+M1433,Pongal,South Indian,Dinner,Non-Vegetarian,"Rice, Moong Dal, Ghee",816,38,Easy,Party
+M0316,Vada,South Indian,Lunch,Gluten-Free,"Lentils, Spices",218,14,Easy,Daily
+M1174,Curd Rice,South Indian,Dinner,Vegetarian,"Rice, Curd, Spices",531,37,Medium,Restaurant-Special
+M1236,Rasam Rice,South Indian,Lunch,Vegetarian,"Tamarind, Tomato, Spices",330,13,Hard,Party
+M3160,Paneer Chilli,Indo-Chinese,Snack,Keto,"Paneer, Capsicum, Soy Sauce",645,3,Medium,Daily
+M2733,Chilli Chicken,Indo-Chinese,Breakfast,Gluten-Free,"Chicken, Capsicum, Spices",444,25,Hard,Daily
+M3973,Chicken Manchurian,Indo-Chinese,Lunch,High-Protein,"Chicken, Maida, Spices",387,29,Medium,Restaurant-Special
+M3641,Schezwan Noodles,Indo-Chinese,Breakfast,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",170,29,Easy,Festive
+M0752,Masala Dosa,South Indian,Dinner,Vegan,"Rice, Lentils, Potato",504,33,Easy,Festive
+M3116,Veg Fried Rice,Indo-Chinese,Lunch,Vegan,"Rice, Mixed Veg, Soy Sauce",519,18,Hard,Daily
+M0157,Curd Rice,South Indian,Dinner,Keto,"Rice, Curd, Spices",424,11,Easy,Festive
+M2562,Chilli Chicken,Indo-Chinese,Lunch,Gluten-Free,"Chicken, Capsicum, Spices",845,28,Hard,Party
+M0121,Fish Curry,South Indian,Breakfast,High-Protein,"Fish, Tamarind, Spices",871,32,Easy,Party
+M1455,Palak Paneer,North Indian,Snack,Gluten-Free,"Spinach, Paneer, Spices",745,19,Medium,Restaurant-Special
+M0512,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",521,22,Easy,Daily
+M1518,Butter Chicken,North Indian,Lunch,Vegan,"Chicken, Butter, Tomato",862,17,Medium,Daily
+M3505,Veg Fried Rice,Indo-Chinese,Snack,High-Protein,"Rice, Mixed Veg, Soy Sauce",680,3,Medium,Restaurant-Special
+M2017,Rajma Chawal,North Indian,Dinner,Keto,"Rajma, Rice, Spices",343,13,Hard,Restaurant-Special
+M3441,American Chopsuey,Indo-Chinese,Snack,High-Protein,"Noodles, Vegetables, Sauce",483,19,Medium,Party
+M2847,Gobi Manchurian,Indo-Chinese,Breakfast,High-Protein,"Cauliflower, Maida, Spices",752,26,Easy,Restaurant-Special
+M1603,Rajma Chawal,North Indian,Breakfast,High-Protein,"Rajma, Rice, Spices",885,8,Hard,Festive
+M3779,American Chopsuey,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Sauce",899,29,Hard,Festive
+M3804,American Chopsuey,Indo-Chinese,Dinner,Non-Vegetarian,"Noodles, Vegetables, Sauce",169,23,Easy,Party
+M0677,Chicken Chettinad,South Indian,Lunch,Gluten-Free,"Chicken, Coconut, Spices",153,32,Easy,Festive
+M0241,Pongal,South Indian,Dinner,High-Protein,"Rice, Moong Dal, Ghee",666,16,Hard,Restaurant-Special
+M1024,Vada,South Indian,Dinner,Keto,"Lentils, Spices",421,6,Hard,Daily
+M2217,Paneer Butter Masala,North Indian,Dinner,Gluten-Free,"Paneer, Tomato, Spices",269,18,Medium,Daily
+M1512,Rajma Chawal,North Indian,Snack,Vegetarian,"Rajma, Rice, Spices",250,22,Hard,Restaurant-Special
+M2814,Schezwan Noodles,Indo-Chinese,Snack,High-Protein,"Noodles, Vegetables, Schezwan Sauce",477,23,Easy,Restaurant-Special
+M3226,Chicken Manchurian,Indo-Chinese,Dinner,Vegan,"Chicken, Maida, Spices",166,25,Easy,Daily
+M3800,Gobi Manchurian,Indo-Chinese,Dinner,Vegetarian,"Cauliflower, Maida, Spices",475,8,Medium,Party
+M3764,Chicken Fried Rice,Indo-Chinese,Breakfast,High-Protein,"Rice, Chicken, Soy Sauce",808,40,Medium,Party
+M2883,Schezwan Noodles,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Schezwan Sauce",266,43,Easy,Party
+M0487,Fish Curry,South Indian,Snack,Vegan,"Fish, Tamarind, Spices",793,42,Easy,Daily
+M3362,Veg Spring Rolls,Indo-Chinese,Dinner,Vegetarian,"Vegetables, Maida, Spices",490,4,Hard,Party
+M1874,Palak Paneer,North Indian,Lunch,Non-Vegetarian,"Spinach, Paneer, Spices",531,22,Hard,Restaurant-Special
+M2462,Paneer Chilli,Indo-Chinese,Dinner,Keto,"Paneer, Capsicum, Soy Sauce",235,45,Hard,Party
+M2438,Chilli Chicken,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Capsicum, Spices",510,24,Medium,Daily
+M0355,Upma,South Indian,Snack,Vegetarian,"Rava, Vegetables, Spices",480,17,Easy,Restaurant-Special
+M1018,Lemon Rice,South Indian,Dinner,High-Protein,"Rice, Lemon, Spices",877,14,Medium,Party
+M3664,Hakka Noodles,Indo-Chinese,Dinner,Non-Vegetarian,"Noodles, Vegetables, Soy Sauce",371,5,Medium,Daily
+M1742,Baingan Bharta,North Indian,Dinner,Keto,"Brinjal, Onion, Tomato",274,20,Medium,Restaurant-Special
+M2331,Kadhi Pakora,North Indian,Dinner,Gluten-Free,"Besan, Curd, Spices",536,21,Hard,Party
+M2404,American Chopsuey,Indo-Chinese,Dinner,High-Protein,"Noodles, Vegetables, Sauce",866,6,Hard,Daily
+M1221,Pongal,South Indian,Snack,Keto,"Rice, Moong Dal, Ghee",251,23,Medium,Restaurant-Special
+M0052,Idli Sambar,South Indian,Breakfast,Non-Vegetarian,"Rice, Lentils, Vegetables",404,27,Medium,Restaurant-Special
+M2723,Chicken Fried Rice,Indo-Chinese,Breakfast,Non-Vegetarian,"Rice, Chicken, Soy Sauce",503,26,Easy,Festive
+M1721,Chole Bhature,North Indian,Breakfast,Non-Vegetarian,"Chickpeas, Maida, Spices",894,30,Medium,Festive
+M0074,Masala Dosa,South Indian,Snack,Gluten-Free,"Rice, Lentils, Potato",473,17,Medium,Party
+M1689,Paneer Butter Masala,North Indian,Breakfast,Keto,"Paneer, Tomato, Spices",772,9,Medium,Party
+M2586,Gobi Manchurian,Indo-Chinese,Dinner,Non-Vegetarian,"Cauliflower, Maida, Spices",434,33,Hard,Festive
+M0439,Idli Sambar,South Indian,Dinner,Gluten-Free,"Rice, Lentils, Vegetables",319,12,Hard,Restaurant-Special
+M1475,Biryani,North Indian,Dinner,Vegan,"Rice, Meat/Vegetables, Spices",749,15,Easy,Party
+M2761,Chilli Chicken,Indo-Chinese,Lunch,Vegan,"Chicken, Capsicum, Spices",363,24,Hard,Restaurant-Special
+M0803,Fish Curry,South Indian,Snack,Vegetarian,"Fish, Tamarind, Spices",532,25,Hard,Restaurant-Special
+M0466,Masala Dosa,South Indian,Snack,Keto,"Rice, Lentils, Potato",718,29,Hard,Restaurant-Special
+M3085,Chilli Chicken,Indo-Chinese,Lunch,Gluten-Free,"Chicken, Capsicum, Spices",835,15,Easy,Restaurant-Special
+M1065,Upma,South Indian,Snack,Vegan,"Rava, Vegetables, Spices",438,36,Hard,Daily
+M3911,Schezwan Noodles,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Schezwan Sauce",644,34,Hard,Party
+M0158,Vada,South Indian,Dinner,Vegan,"Lentils, Spices",388,13,Easy,Festive
+M2004,Dal Makhani,North Indian,Lunch,Vegan,"Urad Dal, Butter, Cream",218,24,Easy,Party
+M1654,Butter Chicken,North Indian,Snack,High-Protein,"Chicken, Butter, Tomato",365,8,Medium,Daily
+M0053,Pongal,South Indian,Snack,Keto,"Rice, Moong Dal, Ghee",294,21,Medium,Daily
+M1345,Pongal,South Indian,Dinner,Vegetarian,"Rice, Moong Dal, Ghee",340,13,Hard,Restaurant-Special
+M0221,Upma,South Indian,Breakfast,Vegan,"Rava, Vegetables, Spices",453,36,Medium,Daily
+M0565,Rasam Rice,South Indian,Lunch,Gluten-Free,"Tamarind, Tomato, Spices",598,40,Medium,Restaurant-Special
+M0027,Idli Sambar,South Indian,Snack,Vegetarian,"Rice, Lentils, Vegetables",731,16,Medium,Festive
+M1584,Paneer Butter Masala,North Indian,Snack,High-Protein,"Paneer, Tomato, Spices",657,10,Easy,Festive
+M2015,Palak Paneer,North Indian,Lunch,High-Protein,"Spinach, Paneer, Spices",308,40,Medium,Restaurant-Special
+M0215,Chicken Chettinad,South Indian,Lunch,Gluten-Free,"Chicken, Coconut, Spices",656,15,Hard,Festive
+M2058,Paneer Butter Masala,North Indian,Snack,Vegetarian,"Paneer, Tomato, Spices",194,34,Hard,Festive
+M0938,Pongal,South Indian,Lunch,High-Protein,"Rice, Moong Dal, Ghee",832,3,Easy,Party
+M0552,Curd Rice,South Indian,Lunch,High-Protein,"Rice, Curd, Spices",845,32,Medium,Festive
+M3027,Chicken Manchurian,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Maida, Spices",487,43,Hard,Daily
+M2587,Gobi Manchurian,Indo-Chinese,Lunch,High-Protein,"Cauliflower, Maida, Spices",862,9,Medium,Restaurant-Special
+M0326,Pongal,South Indian,Dinner,High-Protein,"Rice, Moong Dal, Ghee",211,42,Medium,Restaurant-Special
+M3271,Veg Fried Rice,Indo-Chinese,Snack,Keto,"Rice, Mixed Veg, Soy Sauce",503,10,Hard,Party
+M3976,Veg Fried Rice,Indo-Chinese,Snack,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",223,16,Easy,Restaurant-Special
+M1671,Chole Bhature,North Indian,Dinner,Gluten-Free,"Chickpeas, Maida, Spices",459,23,Easy,Party
+M0830,Idli Sambar,South Indian,Breakfast,Vegan,"Rice, Lentils, Vegetables",411,18,Medium,Party
+M3117,Chicken Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Chicken, Soy Sauce",661,30,Medium,Daily
+M0753,Rasam Rice,South Indian,Dinner,Vegetarian,"Tamarind, Tomato, Spices",218,6,Easy,Restaurant-Special
+M3703,Chilli Chicken,Indo-Chinese,Breakfast,Vegetarian,"Chicken, Capsicum, Spices",809,28,Hard,Daily
+M3238,Schezwan Noodles,Indo-Chinese,Dinner,Keto,"Noodles, Vegetables, Schezwan Sauce",810,9,Medium,Daily
+M2477,Chicken Manchurian,Indo-Chinese,Dinner,Vegetarian,"Chicken, Maida, Spices",773,8,Hard,Restaurant-Special
+M0045,Curd Rice,South Indian,Breakfast,Non-Vegetarian,"Rice, Curd, Spices",482,7,Medium,Restaurant-Special
+M3988,Chicken Manchurian,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Maida, Spices",850,19,Easy,Festive
+M1554,Chole Bhature,North Indian,Lunch,High-Protein,"Chickpeas, Maida, Spices",734,35,Hard,Festive
+M0502,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",362,38,Hard,Daily
+M2399,Aloo Paratha,North Indian,Snack,Vegan,"Wheat, Potato, Spices",770,7,Easy,Daily
+M0977,Masala Dosa,South Indian,Dinner,Vegetarian,"Rice, Lentils, Potato",856,28,Hard,Restaurant-Special
+M2528,Schezwan Noodles,Indo-Chinese,Dinner,Vegan,"Noodles, Vegetables, Schezwan Sauce",553,39,Medium,Restaurant-Special
+M1193,Fish Curry,South Indian,Breakfast,Vegetarian,"Fish, Tamarind, Spices",758,36,Medium,Festive
+M0811,Chicken Chettinad,South Indian,Breakfast,Vegetarian,"Chicken, Coconut, Spices",694,24,Hard,Restaurant-Special
+M1000,Upma,South Indian,Snack,Gluten-Free,"Rava, Vegetables, Spices",669,16,Easy,Party
+M0569,Upma,South Indian,Dinner,Gluten-Free,"Rava, Vegetables, Spices",613,35,Easy,Party
+M2793,Paneer Chilli,Indo-Chinese,Lunch,Vegetarian,"Paneer, Capsicum, Soy Sauce",819,15,Hard,Festive
+M3809,Chilli Chicken,Indo-Chinese,Lunch,Vegan,"Chicken, Capsicum, Spices",554,12,Easy,Party
+M2032,Rajma Chawal,North Indian,Snack,High-Protein,"Rajma, Rice, Spices",739,12,Easy,Festive
+M0367,Pongal,South Indian,Breakfast,Gluten-Free,"Rice, Moong Dal, Ghee",721,27,Medium,Restaurant-Special
+M0458,Vada,South Indian,Lunch,High-Protein,"Lentils, Spices",892,12,Medium,Restaurant-Special
+M0257,Pongal,South Indian,Snack,Keto,"Rice, Moong Dal, Ghee",855,17,Medium,Festive
+M2187,Aloo Paratha,North Indian,Snack,Non-Vegetarian,"Wheat, Potato, Spices",172,44,Medium,Daily
+M2271,Paneer Butter Masala,North Indian,Lunch,Non-Vegetarian,"Paneer, Tomato, Spices",225,34,Medium,Party
+M1477,Butter Chicken,North Indian,Breakfast,Gluten-Free,"Chicken, Butter, Tomato",821,11,Easy,Daily
+M0577,Fish Curry,South Indian,Lunch,Gluten-Free,"Fish, Tamarind, Spices",734,12,Medium,Restaurant-Special
+M2340,Dal Makhani,North Indian,Breakfast,Vegan,"Urad Dal, Butter, Cream",772,6,Hard,Restaurant-Special
+M2141,Baingan Bharta,North Indian,Snack,High-Protein,"Brinjal, Onion, Tomato",222,30,Easy,Party
+M2283,Chole Bhature,North Indian,Breakfast,Vegan,"Chickpeas, Maida, Spices",807,24,Easy,Party
+M3737,Schezwan Noodles,Indo-Chinese,Breakfast,High-Protein,"Noodles, Vegetables, Schezwan Sauce",857,19,Medium,Daily
+M1765,Paneer Butter Masala,North Indian,Breakfast,Vegetarian,"Paneer, Tomato, Spices",191,8,Hard,Restaurant-Special
+M2305,Paneer Butter Masala,North Indian,Lunch,Keto,"Paneer, Tomato, Spices",788,10,Medium,Daily
+M2894,Chilli Chicken,Indo-Chinese,Lunch,High-Protein,"Chicken, Capsicum, Spices",711,40,Hard,Daily
+M0292,Vada,South Indian,Snack,Keto,"Lentils, Spices",200,41,Medium,Restaurant-Special
+M0730,Chicken Chettinad,South Indian,Snack,Non-Vegetarian,"Chicken, Coconut, Spices",654,28,Hard,Festive
+M1614,Dal Makhani,North Indian,Breakfast,Gluten-Free,"Urad Dal, Butter, Cream",371,24,Hard,Party
+M0135,Idli Sambar,South Indian,Snack,High-Protein,"Rice, Lentils, Vegetables",644,7,Hard,Daily
+M1511,Chole Bhature,North Indian,Dinner,Keto,"Chickpeas, Maida, Spices",564,26,Hard,Daily
+M3222,Chicken Manchurian,Indo-Chinese,Breakfast,Keto,"Chicken, Maida, Spices",900,21,Hard,Festive
+M0681,Fish Curry,South Indian,Snack,Gluten-Free,"Fish, Tamarind, Spices",886,4,Easy,Party
+M3474,Veg Spring Rolls,Indo-Chinese,Dinner,Vegetarian,"Vegetables, Maida, Spices",800,32,Hard,Festive
+M0264,Lemon Rice,South Indian,Breakfast,Vegan,"Rice, Lemon, Spices",327,14,Easy,Festive
+M2429,Paneer Chilli,Indo-Chinese,Breakfast,Non-Vegetarian,"Paneer, Capsicum, Soy Sauce",881,18,Easy,Party
+M3350,Chicken Fried Rice,Indo-Chinese,Breakfast,High-Protein,"Rice, Chicken, Soy Sauce",256,34,Hard,Daily
+M2242,Chole Bhature,North Indian,Snack,Gluten-Free,"Chickpeas, Maida, Spices",296,13,Easy,Party
+M0765,Lemon Rice,South Indian,Lunch,Vegetarian,"Rice, Lemon, Spices",251,25,Medium,Festive
+M0057,Rasam Rice,South Indian,Lunch,Gluten-Free,"Tamarind, Tomato, Spices",209,35,Medium,Festive
+M2785,Chilli Chicken,Indo-Chinese,Dinner,Non-Vegetarian,"Chicken, Capsicum, Spices",540,41,Medium,Party
+M0683,Chicken Chettinad,South Indian,Snack,Non-Vegetarian,"Chicken, Coconut, Spices",811,27,Easy,Daily
+M1294,Vada,South Indian,Lunch,Vegetarian,"Lentils, Spices",537,26,Hard,Festive
+M2186,Palak Paneer,North Indian,Snack,High-Protein,"Spinach, Paneer, Spices",225,14,Medium,Daily
+M1310,Rasam Rice,South Indian,Snack,Gluten-Free,"Tamarind, Tomato, Spices",393,31,Hard,Festive
+M3401,American Chopsuey,Indo-Chinese,Breakfast,High-Protein,"Noodles, Vegetables, Sauce",177,12,Easy,Party
+M0545,Masala Dosa,South Indian,Breakfast,Vegetarian,"Rice, Lentils, Potato",376,41,Hard,Festive
+M1861,Chole Bhature,North Indian,Lunch,Non-Vegetarian,"Chickpeas, Maida, Spices",782,26,Easy,Daily
+M2709,Veg Spring Rolls,Indo-Chinese,Breakfast,Non-Vegetarian,"Vegetables, Maida, Spices",374,25,Easy,Party
+M3932,Veg Fried Rice,Indo-Chinese,Snack,Vegetarian,"Rice, Mixed Veg, Soy Sauce",248,33,Hard,Festive
+M1729,Dal Makhani,North Indian,Lunch,High-Protein,"Urad Dal, Butter, Cream",793,8,Hard,Restaurant-Special
+M2346,Dal Makhani,North Indian,Breakfast,Non-Vegetarian,"Urad Dal, Butter, Cream",288,40,Hard,Restaurant-Special
+M0839,Lemon Rice,South Indian,Breakfast,High-Protein,"Rice, Lemon, Spices",189,24,Medium,Party
+M0171,Idli Sambar,South Indian,Dinner,Vegan,"Rice, Lentils, Vegetables",869,41,Easy,Daily
+M2025,Paneer Butter Masala,North Indian,Snack,Vegan,"Paneer, Tomato, Spices",460,38,Medium,Party
+M3847,Gobi Manchurian,Indo-Chinese,Dinner,Gluten-Free,"Cauliflower, Maida, Spices",219,36,Easy,Daily
+M3585,Chicken Manchurian,Indo-Chinese,Snack,Non-Vegetarian,"Chicken, Maida, Spices",771,38,Hard,Daily
+M1551,Kadhi Pakora,North Indian,Breakfast,Vegan,"Besan, Curd, Spices",753,13,Medium,Party
+M1589,Dal Makhani,North Indian,Snack,High-Protein,"Urad Dal, Butter, Cream",690,17,Easy,Restaurant-Special
+M2764,Gobi Manchurian,Indo-Chinese,Snack,Vegetarian,"Cauliflower, Maida, Spices",614,32,Hard,Daily
+M0189,Curd Rice,South Indian,Breakfast,Gluten-Free,"Rice, Curd, Spices",208,17,Medium,Daily
+M0013,Fish Curry,South Indian,Snack,Vegetarian,"Fish, Tamarind, Spices",548,31,Medium,Daily
+M3839,Gobi Manchurian,Indo-Chinese,Dinner,Keto,"Cauliflower, Maida, Spices",272,8,Hard,Daily
+M0323,Masala Dosa,South Indian,Dinner,Non-Vegetarian,"Rice, Lentils, Potato",263,25,Hard,Party
+M0986,Masala Dosa,South Indian,Lunch,Gluten-Free,"Rice, Lentils, Potato",371,27,Medium,Restaurant-Special
+M3630,Schezwan Noodles,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Schezwan Sauce",366,17,Easy,Daily
+M0433,Curd Rice,South Indian,Breakfast,Keto,"Rice, Curd, Spices",278,32,Hard,Daily
+M1092,Masala Dosa,South Indian,Breakfast,Vegetarian,"Rice, Lentils, Potato",678,44,Medium,Daily
+M2895,Chicken Manchurian,Indo-Chinese,Breakfast,Keto,"Chicken, Maida, Spices",272,19,Medium,Festive
+M2837,Chicken Fried Rice,Indo-Chinese,Lunch,Gluten-Free,"Rice, Chicken, Soy Sauce",795,14,Hard,Daily
+M2892,Chicken Fried Rice,Indo-Chinese,Lunch,Vegetarian,"Rice, Chicken, Soy Sauce",634,23,Easy,Festive
+M2239,Kadhi Pakora,North Indian,Breakfast,Gluten-Free,"Besan, Curd, Spices",381,17,Medium,Daily
+M3124,American Chopsuey,Indo-Chinese,Snack,Non-Vegetarian,"Noodles, Vegetables, Sauce",541,30,Easy,Restaurant-Special
+M3685,Paneer Chilli,Indo-Chinese,Lunch,Gluten-Free,"Paneer, Capsicum, Soy Sauce",597,11,Hard,Party
+M1806,Paneer Butter Masala,North Indian,Lunch,Vegetarian,"Paneer, Tomato, Spices",284,33,Medium,Restaurant-Special
+M1316,Rasam Rice,South Indian,Breakfast,Vegan,"Tamarind, Tomato, Spices",197,21,Medium,Daily
+M2958,Chilli Chicken,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Capsicum, Spices",282,43,Hard,Daily
+M1097,Curd Rice,South Indian,Dinner,Vegetarian,"Rice, Curd, Spices",782,33,Medium,Restaurant-Special
+M1946,Butter Chicken,North Indian,Lunch,Gluten-Free,"Chicken, Butter, Tomato",638,37,Easy,Restaurant-Special
+M1033,Idli Sambar,South Indian,Dinner,Vegan,"Rice, Lentils, Vegetables",267,14,Easy,Restaurant-Special
+M1019,Rasam Rice,South Indian,Dinner,Gluten-Free,"Tamarind, Tomato, Spices",817,31,Hard,Festive
+M0239,Idli Sambar,South Indian,Lunch,Vegetarian,"Rice, Lentils, Vegetables",401,10,Easy,Party
+M0175,Vada,South Indian,Lunch,High-Protein,"Lentils, Spices",799,11,Medium,Party
+M2241,Chole Bhature,North Indian,Dinner,Keto,"Chickpeas, Maida, Spices",220,31,Hard,Festive
+M2568,Paneer Chilli,Indo-Chinese,Dinner,Non-Vegetarian,"Paneer, Capsicum, Soy Sauce",289,7,Hard,Restaurant-Special
+M0819,Pongal,South Indian,Lunch,Non-Vegetarian,"Rice, Moong Dal, Ghee",596,38,Easy,Restaurant-Special
+M0991,Pongal,South Indian,Lunch,Vegetarian,"Rice, Moong Dal, Ghee",755,39,Medium,Restaurant-Special
+M1917,Palak Paneer,North Indian,Snack,Vegan,"Spinach, Paneer, Spices",885,9,Easy,Party
+M1114,Lemon Rice,South Indian,Lunch,Keto,"Rice, Lemon, Spices",493,39,Hard,Daily
+M1379,Lemon Rice,South Indian,Lunch,High-Protein,"Rice, Lemon, Spices",590,29,Medium,Festive
+M1427,Upma,South Indian,Breakfast,Gluten-Free,"Rava, Vegetables, Spices",815,7,Hard,Restaurant-Special
+M0411,Masala Dosa,South Indian,Lunch,Vegetarian,"Rice, Lentils, Potato",157,20,Hard,Restaurant-Special
+M1139,Curd Rice,South Indian,Dinner,High-Protein,"Rice, Curd, Spices",762,27,Hard,Daily
+M0818,Curd Rice,South Indian,Lunch,High-Protein,"Rice, Curd, Spices",722,7,Hard,Festive
+M2963,Chicken Manchurian,Indo-Chinese,Lunch,Vegan,"Chicken, Maida, Spices",546,4,Hard,Daily
+M1733,Baingan Bharta,North Indian,Snack,Vegetarian,"Brinjal, Onion, Tomato",242,16,Easy,Daily
+M2349,Kadhi Pakora,North Indian,Snack,Vegan,"Besan, Curd, Spices",242,9,Medium,Restaurant-Special
+M1451,Palak Paneer,North Indian,Dinner,Keto,"Spinach, Paneer, Spices",578,23,Hard,Festive
+M0228,Lemon Rice,South Indian,Dinner,Non-Vegetarian,"Rice, Lemon, Spices",359,15,Hard,Restaurant-Special
+M2701,Hakka Noodles,Indo-Chinese,Lunch,Keto,"Noodles, Vegetables, Soy Sauce",707,8,Medium,Festive
+M1581,Aloo Paratha,North Indian,Dinner,Non-Vegetarian,"Wheat, Potato, Spices",262,38,Hard,Festive
+M1162,Upma,South Indian,Dinner,Vegan,"Rava, Vegetables, Spices",814,39,Easy,Restaurant-Special
+M0352,Lemon Rice,South Indian,Dinner,Keto,"Rice, Lemon, Spices",565,43,Medium,Restaurant-Special
+M1394,Idli Sambar,South Indian,Breakfast,Non-Vegetarian,"Rice, Lentils, Vegetables",367,42,Hard,Daily
+M1264,Curd Rice,South Indian,Breakfast,Vegetarian,"Rice, Curd, Spices",178,38,Hard,Festive
+M1238,Lemon Rice,South Indian,Breakfast,Non-Vegetarian,"Rice, Lemon, Spices",357,25,Medium,Festive
+M1201,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",524,9,Medium,Party
+M2179,Butter Chicken,North Indian,Lunch,Vegan,"Chicken, Butter, Tomato",899,42,Medium,Daily
+M2467,Veg Spring Rolls,Indo-Chinese,Snack,Vegan,"Vegetables, Maida, Spices",526,23,Medium,Festive
+M2011,Biryani,North Indian,Breakfast,Vegan,"Rice, Meat/Vegetables, Spices",815,38,Medium,Daily
+M1378,Chicken Chettinad,South Indian,Dinner,Vegetarian,"Chicken, Coconut, Spices",371,9,Easy,Daily
+M0070,Rasam Rice,South Indian,Snack,Keto,"Tamarind, Tomato, Spices",406,39,Hard,Restaurant-Special
+M3598,Chilli Chicken,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Capsicum, Spices",638,41,Medium,Restaurant-Special
+M0046,Masala Dosa,South Indian,Snack,Gluten-Free,"Rice, Lentils, Potato",682,12,Medium,Party
+M1069,Vada,South Indian,Lunch,Vegan,"Lentils, Spices",464,36,Medium,Restaurant-Special
+M3494,Hakka Noodles,Indo-Chinese,Snack,Vegan,"Noodles, Vegetables, Soy Sauce",496,13,Medium,Festive
+M0184,Fish Curry,South Indian,Dinner,High-Protein,"Fish, Tamarind, Spices",647,35,Hard,Festive
+M2251,Kadhi Pakora,North Indian,Lunch,Keto,"Besan, Curd, Spices",465,24,Easy,Restaurant-Special
+M1414,Curd Rice,South Indian,Dinner,Non-Vegetarian,"Rice, Curd, Spices",882,4,Hard,Daily
+M1587,Palak Paneer,North Indian,Snack,Gluten-Free,"Spinach, Paneer, Spices",476,42,Easy,Daily
+M1271,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",757,18,Medium,Festive
+M1415,Fish Curry,South Indian,Snack,Vegan,"Fish, Tamarind, Spices",480,10,Medium,Restaurant-Special
+M0140,Masala Dosa,South Indian,Lunch,Gluten-Free,"Rice, Lentils, Potato",207,22,Easy,Festive
+M3354,Schezwan Noodles,Indo-Chinese,Snack,Gluten-Free,"Noodles, Vegetables, Schezwan Sauce",677,9,Hard,Party
+M3212,Veg Spring Rolls,Indo-Chinese,Snack,High-Protein,"Vegetables, Maida, Spices",562,4,Easy,Festive
+M0310,Chicken Chettinad,South Indian,Snack,Vegetarian,"Chicken, Coconut, Spices",411,24,Hard,Daily
+M0267,Chicken Chettinad,South Indian,Breakfast,Non-Vegetarian,"Chicken, Coconut, Spices",823,20,Hard,Daily
+M3151,American Chopsuey,Indo-Chinese,Snack,Gluten-Free,"Noodles, Vegetables, Sauce",283,36,Medium,Party
+M2169,Kadhi Pakora,North Indian,Breakfast,Gluten-Free,"Besan, Curd, Spices",390,25,Medium,Daily
+M3208,Paneer Chilli,Indo-Chinese,Snack,Non-Vegetarian,"Paneer, Capsicum, Soy Sauce",517,25,Medium,Daily
+M0064,Fish Curry,South Indian,Lunch,Gluten-Free,"Fish, Tamarind, Spices",175,3,Easy,Festive
+M2572,Chicken Fried Rice,Indo-Chinese,Dinner,Gluten-Free,"Rice, Chicken, Soy Sauce",897,39,Easy,Festive
+M1992,Rajma Chawal,North Indian,Lunch,Vegan,"Rajma, Rice, Spices",467,43,Medium,Party
+M1579,Rajma Chawal,North Indian,Snack,Vegan,"Rajma, Rice, Spices",712,28,Hard,Festive
+M2683,Veg Spring Rolls,Indo-Chinese,Breakfast,High-Protein,"Vegetables, Maida, Spices",403,14,Easy,Party
+M0145,Vada,South Indian,Dinner,Vegetarian,"Lentils, Spices",385,26,Hard,Restaurant-Special
+M3457,Schezwan Noodles,Indo-Chinese,Breakfast,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",872,16,Easy,Festive
+M3402,Veg Spring Rolls,Indo-Chinese,Dinner,Keto,"Vegetables, Maida, Spices",655,31,Medium,Festive
+M3993,Hakka Noodles,Indo-Chinese,Snack,Vegan,"Noodles, Vegetables, Soy Sauce",770,3,Hard,Party
+M1406,Upma,South Indian,Lunch,Keto,"Rava, Vegetables, Spices",405,17,Medium,Party
+M3667,Veg Fried Rice,Indo-Chinese,Dinner,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",439,16,Easy,Daily
+M2580,Chicken Manchurian,Indo-Chinese,Breakfast,Keto,"Chicken, Maida, Spices",840,9,Easy,Daily
+M0777,Curd Rice,South Indian,Breakfast,Vegetarian,"Rice, Curd, Spices",771,14,Hard,Party
+M2172,Dal Makhani,North Indian,Dinner,High-Protein,"Urad Dal, Butter, Cream",876,11,Easy,Restaurant-Special
+M3025,Chicken Fried Rice,Indo-Chinese,Lunch,Gluten-Free,"Rice, Chicken, Soy Sauce",817,25,Hard,Party
+M1965,Chole Bhature,North Indian,Breakfast,Keto,"Chickpeas, Maida, Spices",636,15,Hard,Festive
+M0970,Curd Rice,South Indian,Dinner,Gluten-Free,"Rice, Curd, Spices",360,43,Hard,Daily
+M2282,Biryani,North Indian,Lunch,High-Protein,"Rice, Meat/Vegetables, Spices",841,35,Medium,Daily
+M0252,Vada,South Indian,Snack,Keto,"Lentils, Spices",878,11,Hard,Daily
+M3615,Schezwan Noodles,Indo-Chinese,Breakfast,Non-Vegetarian,"Noodles, Vegetables, Schezwan Sauce",165,10,Medium,Party
+M0865,Fish Curry,South Indian,Dinner,Non-Vegetarian,"Fish, Tamarind, Spices",880,39,Medium,Party
+M0810,Pongal,South Indian,Dinner,High-Protein,"Rice, Moong Dal, Ghee",622,9,Easy,Festive
+M1599,Rajma Chawal,North Indian,Dinner,Vegetarian,"Rajma, Rice, Spices",154,33,Medium,Restaurant-Special
+M2593,Gobi Manchurian,Indo-Chinese,Dinner,Non-Vegetarian,"Cauliflower, Maida, Spices",399,8,Easy,Festive
+M3493,Paneer Chilli,Indo-Chinese,Snack,High-Protein,"Paneer, Capsicum, Soy Sauce",868,15,Easy,Festive
+M1299,Chicken Chettinad,South Indian,Snack,Vegan,"Chicken, Coconut, Spices",784,36,Easy,Party
+M3871,Veg Spring Rolls,Indo-Chinese,Breakfast,Keto,"Vegetables, Maida, Spices",237,28,Easy,Daily
+M0280,Vada,South Indian,Dinner,High-Protein,"Lentils, Spices",651,29,Hard,Daily
+M1462,Dal Makhani,North Indian,Breakfast,Keto,"Urad Dal, Butter, Cream",247,9,Medium,Restaurant-Special
+M1423,Masala Dosa,South Indian,Snack,Keto,"Rice, Lentils, Potato",478,22,Hard,Restaurant-Special
+M3284,American Chopsuey,Indo-Chinese,Breakfast,Gluten-Free,"Noodles, Vegetables, Sauce",200,5,Hard,Party
+M1573,Palak Paneer,North Indian,Dinner,Keto,"Spinach, Paneer, Spices",479,13,Medium,Festive
+M0359,Rasam Rice,South Indian,Snack,Non-Vegetarian,"Tamarind, Tomato, Spices",293,18,Medium,Restaurant-Special
+M3928,Veg Fried Rice,Indo-Chinese,Breakfast,Vegetarian,"Rice, Mixed Veg, Soy Sauce",195,13,Easy,Restaurant-Special
+M0300,Fish Curry,South Indian,Dinner,High-Protein,"Fish, Tamarind, Spices",764,27,Hard,Restaurant-Special
+M1076,Masala Dosa,South Indian,Dinner,Gluten-Free,"Rice, Lentils, Potato",371,8,Easy,Festive
+M1030,Chicken Chettinad,South Indian,Breakfast,Non-Vegetarian,"Chicken, Coconut, Spices",455,25,Medium,Daily
+M0535,Curd Rice,South Indian,Lunch,Non-Vegetarian,"Rice, Curd, Spices",671,28,Medium,Party
+M3318,American Chopsuey,Indo-Chinese,Snack,Vegan,"Noodles, Vegetables, Sauce",513,39,Easy,Restaurant-Special
+M3253,Chilli Chicken,Indo-Chinese,Dinner,High-Protein,"Chicken, Capsicum, Spices",754,22,Medium,Daily
+M1771,Rajma Chawal,North Indian,Breakfast,Non-Vegetarian,"Rajma, Rice, Spices",519,20,Easy,Party
+M2919,Veg Spring Rolls,Indo-Chinese,Lunch,Keto,"Vegetables, Maida, Spices",191,19,Easy,Party
+M0416,Rasam Rice,South Indian,Breakfast,High-Protein,"Tamarind, Tomato, Spices",838,16,Medium,Daily
+M0840,Fish Curry,South Indian,Dinner,Keto,"Fish, Tamarind, Spices",792,41,Easy,Party
+M2628,Gobi Manchurian,Indo-Chinese,Dinner,High-Protein,"Cauliflower, Maida, Spices",629,24,Hard,Festive
+M3805,Schezwan Noodles,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Schezwan Sauce",561,13,Hard,Festive
+M1043,Masala Dosa,South Indian,Snack,Keto,"Rice, Lentils, Potato",159,31,Hard,Festive
+M1498,Biryani,North Indian,Breakfast,Non-Vegetarian,"Rice, Meat/Vegetables, Spices",566,13,Hard,Festive
+M1399,Curd Rice,South Indian,Lunch,Gluten-Free,"Rice, Curd, Spices",359,14,Hard,Festive
+M0309,Vada,South Indian,Breakfast,High-Protein,"Lentils, Spices",367,3,Hard,Daily
+M1533,Kadhi Pakora,North Indian,Breakfast,High-Protein,"Besan, Curd, Spices",348,36,Easy,Festive
+M2488,Paneer Chilli,Indo-Chinese,Dinner,Vegetarian,"Paneer, Capsicum, Soy Sauce",299,38,Hard,Restaurant-Special
+M3285,Veg Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Mixed Veg, Soy Sauce",454,5,Medium,Party
+M2619,Gobi Manchurian,Indo-Chinese,Breakfast,Non-Vegetarian,"Cauliflower, Maida, Spices",175,16,Hard,Party
+M1074,Fish Curry,South Indian,Dinner,Vegan,"Fish, Tamarind, Spices",374,11,Medium,Festive
+M3300,Veg Spring Rolls,Indo-Chinese,Snack,Vegan,"Vegetables, Maida, Spices",408,21,Easy,Festive
+M3053,Gobi Manchurian,Indo-Chinese,Dinner,High-Protein,"Cauliflower, Maida, Spices",386,34,Medium,Daily
+M3518,Chicken Fried Rice,Indo-Chinese,Breakfast,Gluten-Free,"Rice, Chicken, Soy Sauce",209,12,Medium,Restaurant-Special
+M0762,Rasam Rice,South Indian,Breakfast,High-Protein,"Tamarind, Tomato, Spices",308,26,Hard,Festive
+M2772,Chilli Chicken,Indo-Chinese,Snack,Vegetarian,"Chicken, Capsicum, Spices",288,33,Easy,Party
+M1111,Upma,South Indian,Lunch,Keto,"Rava, Vegetables, Spices",175,29,Hard,Festive
+M1877,Dal Makhani,North Indian,Breakfast,High-Protein,"Urad Dal, Butter, Cream",346,10,Hard,Restaurant-Special
+M2054,Biryani,North Indian,Dinner,Gluten-Free,"Rice, Meat/Vegetables, Spices",871,7,Medium,Festive
+M0059,Rasam Rice,South Indian,Lunch,Vegetarian,"Tamarind, Tomato, Spices",277,19,Medium,Daily
+M0077,Chicken Chettinad,South Indian,Snack,Gluten-Free,"Chicken, Coconut, Spices",676,14,Hard,Restaurant-Special
+M0369,Pongal,South Indian,Snack,Vegan,"Rice, Moong Dal, Ghee",237,26,Easy,Festive
+M2430,Veg Spring Rolls,Indo-Chinese,Snack,Vegan,"Vegetables, Maida, Spices",183,34,Easy,Daily
+M3201,Paneer Chilli,Indo-Chinese,Snack,Vegan,"Paneer, Capsicum, Soy Sauce",434,7,Easy,Restaurant-Special
+M0734,Chicken Chettinad,South Indian,Breakfast,Non-Vegetarian,"Chicken, Coconut, Spices",269,22,Medium,Restaurant-Special
+M3830,Veg Spring Rolls,Indo-Chinese,Breakfast,Keto,"Vegetables, Maida, Spices",318,16,Easy,Daily
+M2320,Kadhi Pakora,North Indian,Lunch,Keto,"Besan, Curd, Spices",346,12,Medium,Restaurant-Special
+M2385,Butter Chicken,North Indian,Snack,Keto,"Chicken, Butter, Tomato",860,5,Easy,Restaurant-Special
+M2731,Hakka Noodles,Indo-Chinese,Lunch,Vegan,"Noodles, Vegetables, Soy Sauce",845,40,Hard,Festive
+M1840,Rajma Chawal,North Indian,Dinner,Non-Vegetarian,"Rajma, Rice, Spices",189,28,Hard,Restaurant-Special
+M2665,Veg Spring Rolls,Indo-Chinese,Snack,Keto,"Vegetables, Maida, Spices",595,20,Medium,Restaurant-Special
+M0125,Vada,South Indian,Dinner,Non-Vegetarian,"Lentils, Spices",823,20,Hard,Restaurant-Special
+M3473,Gobi Manchurian,Indo-Chinese,Lunch,Keto,"Cauliflower, Maida, Spices",171,11,Medium,Restaurant-Special
+M3732,Chicken Fried Rice,Indo-Chinese,Breakfast,Gluten-Free,"Rice, Chicken, Soy Sauce",520,43,Hard,Party
+M2257,Aloo Paratha,North Indian,Lunch,Keto,"Wheat, Potato, Spices",163,8,Medium,Restaurant-Special
+M2314,Paneer Butter Masala,North Indian,Lunch,Gluten-Free,"Paneer, Tomato, Spices",567,27,Hard,Party
+M0430,Pongal,South Indian,Snack,Gluten-Free,"Rice, Moong Dal, Ghee",304,41,Medium,Party
+M1974,Dal Makhani,North Indian,Lunch,High-Protein,"Urad Dal, Butter, Cream",411,43,Hard,Daily
+M3954,Paneer Chilli,Indo-Chinese,Lunch,Vegetarian,"Paneer, Capsicum, Soy Sauce",535,33,Easy,Festive
+M0817,Curd Rice,South Indian,Snack,Non-Vegetarian,"Rice, Curd, Spices",527,27,Medium,Daily
+M2717,Chicken Manchurian,Indo-Chinese,Snack,Vegan,"Chicken, Maida, Spices",312,26,Medium,Festive
+M3056,Veg Spring Rolls,Indo-Chinese,Lunch,Non-Vegetarian,"Vegetables, Maida, Spices",443,4,Medium,Daily
+M1692,Palak Paneer,North Indian,Dinner,Vegetarian,"Spinach, Paneer, Spices",245,35,Easy,Party
+M0388,Upma,South Indian,Snack,Vegetarian,"Rava, Vegetables, Spices",385,41,Hard,Restaurant-Special
+M0031,Rasam Rice,South Indian,Dinner,Keto,"Tamarind, Tomato, Spices",200,16,Medium,Daily
+M1176,Idli Sambar,South Indian,Dinner,High-Protein,"Rice, Lentils, Vegetables",359,11,Medium,Daily
+M0204,Masala Dosa,South Indian,Dinner,Keto,"Rice, Lentils, Potato",893,16,Medium,Festive
+M1026,Pongal,South Indian,Snack,Gluten-Free,"Rice, Moong Dal, Ghee",751,41,Easy,Festive
+M3858,Veg Fried Rice,Indo-Chinese,Lunch,High-Protein,"Rice, Mixed Veg, Soy Sauce",231,33,Easy,Party
+M3758,Veg Spring Rolls,Indo-Chinese,Lunch,Vegan,"Vegetables, Maida, Spices",298,7,Easy,Restaurant-Special
+M0894,Rasam Rice,South Indian,Lunch,Vegan,"Tamarind, Tomato, Spices",758,5,Easy,Party
+M2679,Schezwan Noodles,Indo-Chinese,Dinner,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",472,32,Easy,Festive
+M2667,Chicken Fried Rice,Indo-Chinese,Snack,Gluten-Free,"Rice, Chicken, Soy Sauce",439,28,Hard,Festive
+M0479,Pongal,South Indian,Snack,Vegan,"Rice, Moong Dal, Ghee",270,36,Hard,Daily
+M1685,Baingan Bharta,North Indian,Dinner,Vegan,"Brinjal, Onion, Tomato",522,22,Easy,Restaurant-Special
+M1351,Upma,South Indian,Breakfast,Vegan,"Rava, Vegetables, Spices",614,20,Hard,Restaurant-Special
+M0444,Upma,South Indian,Snack,Gluten-Free,"Rava, Vegetables, Spices",740,27,Easy,Restaurant-Special
+M2771,Veg Fried Rice,Indo-Chinese,Breakfast,Keto,"Rice, Mixed Veg, Soy Sauce",398,45,Easy,Daily
+M1339,Fish Curry,South Indian,Breakfast,Non-Vegetarian,"Fish, Tamarind, Spices",821,21,Medium,Restaurant-Special
+M0193,Idli Sambar,South Indian,Dinner,Gluten-Free,"Rice, Lentils, Vegetables",521,43,Hard,Daily
+M2970,Paneer Chilli,Indo-Chinese,Breakfast,Gluten-Free,"Paneer, Capsicum, Soy Sauce",289,16,Hard,Daily
+M1129,Chicken Chettinad,South Indian,Snack,Keto,"Chicken, Coconut, Spices",357,19,Easy,Festive
+M0007,Lemon Rice,South Indian,Breakfast,High-Protein,"Rice, Lemon, Spices",177,17,Medium,Festive
+M0440,Vada,South Indian,Snack,Vegetarian,"Lentils, Spices",507,28,Hard,Daily
+M0290,Pongal,South Indian,Dinner,Non-Vegetarian,"Rice, Moong Dal, Ghee",678,42,Easy,Party
+M1107,Idli Sambar,South Indian,Snack,High-Protein,"Rice, Lentils, Vegetables",205,4,Medium,Party
+M3694,Chilli Chicken,Indo-Chinese,Lunch,Vegetarian,"Chicken, Capsicum, Spices",812,7,Hard,Daily
+M3417,Gobi Manchurian,Indo-Chinese,Breakfast,Vegan,"Cauliflower, Maida, Spices",833,44,Medium,Festive
+M3941,Schezwan Noodles,Indo-Chinese,Snack,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",433,37,Easy,Restaurant-Special
+M1922,Rajma Chawal,North Indian,Dinner,Non-Vegetarian,"Rajma, Rice, Spices",838,30,Medium,Party
+M2478,Gobi Manchurian,Indo-Chinese,Breakfast,Non-Vegetarian,"Cauliflower, Maida, Spices",151,26,Easy,Restaurant-Special
+M2368,Paneer Butter Masala,North Indian,Lunch,Gluten-Free,"Paneer, Tomato, Spices",880,14,Easy,Daily
+M1736,Butter Chicken,North Indian,Breakfast,Vegan,"Chicken, Butter, Tomato",627,25,Easy,Party
+M2685,Paneer Chilli,Indo-Chinese,Breakfast,Non-Vegetarian,"Paneer, Capsicum, Soy Sauce",891,13,Hard,Party
+M3883,Chilli Chicken,Indo-Chinese,Snack,High-Protein,"Chicken, Capsicum, Spices",208,10,Easy,Party
+M0195,Lemon Rice,South Indian,Snack,Keto,"Rice, Lemon, Spices",401,3,Easy,Daily
+M0451,Curd Rice,South Indian,Snack,Non-Vegetarian,"Rice, Curd, Spices",479,14,Hard,Festive
+M1594,Aloo Paratha,North Indian,Snack,Keto,"Wheat, Potato, Spices",587,18,Medium,Daily
+M1106,Masala Dosa,South Indian,Lunch,High-Protein,"Rice, Lentils, Potato",243,40,Hard,Daily
+M0030,Lemon Rice,South Indian,Lunch,Vegan,"Rice, Lemon, Spices",648,9,Medium,Party
+M0786,Idli Sambar,South Indian,Breakfast,High-Protein,"Rice, Lentils, Vegetables",391,23,Easy,Festive
+M3998,Veg Fried Rice,Indo-Chinese,Lunch,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",684,9,Easy,Restaurant-Special
+M2623,Veg Fried Rice,Indo-Chinese,Snack,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",428,42,Easy,Restaurant-Special
+M2908,Chicken Manchurian,Indo-Chinese,Snack,Gluten-Free,"Chicken, Maida, Spices",485,35,Medium,Daily
+M3388,Veg Spring Rolls,Indo-Chinese,Breakfast,Keto,"Vegetables, Maida, Spices",790,22,Hard,Party
+M3787,Paneer Chilli,Indo-Chinese,Breakfast,Gluten-Free,"Paneer, Capsicum, Soy Sauce",166,34,Hard,Party
+M0882,Lemon Rice,South Indian,Lunch,Vegetarian,"Rice, Lemon, Spices",510,7,Easy,Daily
+M3700,Veg Spring Rolls,Indo-Chinese,Breakfast,Vegan,"Vegetables, Maida, Spices",722,9,Easy,Daily
+M2370,Aloo Paratha,North Indian,Lunch,Non-Vegetarian,"Wheat, Potato, Spices",649,10,Easy,Daily
+M2737,Hakka Noodles,Indo-Chinese,Snack,Gluten-Free,"Noodles, Vegetables, Soy Sauce",215,38,Hard,Restaurant-Special
+M3595,Schezwan Noodles,Indo-Chinese,Breakfast,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",181,34,Hard,Daily
+M0223,Fish Curry,South Indian,Breakfast,High-Protein,"Fish, Tamarind, Spices",863,31,Medium,Restaurant-Special
+M1996,Kadhi Pakora,North Indian,Dinner,Keto,"Besan, Curd, Spices",841,25,Hard,Party
+M1718,Aloo Paratha,North Indian,Dinner,Non-Vegetarian,"Wheat, Potato, Spices",743,21,Hard,Restaurant-Special
+M0574,Masala Dosa,South Indian,Dinner,Gluten-Free,"Rice, Lentils, Potato",696,5,Hard,Festive
+M3329,Veg Fried Rice,Indo-Chinese,Lunch,Non-Vegetarian,"Rice, Mixed Veg, Soy Sauce",202,38,Easy,Festive
+M3378,Chicken Fried Rice,Indo-Chinese,Lunch,Vegan,"Rice, Chicken, Soy Sauce",796,45,Medium,Festive
+M1538,Baingan Bharta,North Indian,Dinner,Vegetarian,"Brinjal, Onion, Tomato",610,26,Hard,Festive
+M1259,Lemon Rice,South Indian,Lunch,Vegan,"Rice, Lemon, Spices",373,36,Easy,Festive
+M2755,Veg Spring Rolls,Indo-Chinese,Breakfast,Vegetarian,"Vegetables, Maida, Spices",618,3,Medium,Restaurant-Special
+M1346,Lemon Rice,South Indian,Breakfast,Vegetarian,"Rice, Lemon, Spices",467,21,Hard,Daily
+M0081,Fish Curry,South Indian,Lunch,Gluten-Free,"Fish, Tamarind, Spices",155,22,Easy,Daily
+M0258,Masala Dosa,South Indian,Lunch,Gluten-Free,"Rice, Lentils, Potato",409,36,Medium,Daily
+M0296,Masala Dosa,South Indian,Dinner,Non-Vegetarian,"Rice, Lentils, Potato",445,33,Medium,Restaurant-Special
+M2093,Aloo Paratha,North Indian,Lunch,High-Protein,"Wheat, Potato, Spices",671,38,Medium,Festive
+M1035,Lemon Rice,South Indian,Dinner,Vegan,"Rice, Lemon, Spices",808,16,Easy,Festive
+M1546,Chole Bhature,North Indian,Dinner,Non-Vegetarian,"Chickpeas, Maida, Spices",643,31,Easy,Restaurant-Special
+M1841,Butter Chicken,North Indian,Lunch,Non-Vegetarian,"Chicken, Butter, Tomato",233,43,Hard,Daily
+M1741,Baingan Bharta,North Indian,Breakfast,Gluten-Free,"Brinjal, Onion, Tomato",225,24,Easy,Party
+M2376,Chole Bhature,North Indian,Lunch,Vegan,"Chickpeas, Maida, Spices",689,22,Medium,Restaurant-Special
+M0655,Upma,South Indian,Breakfast,Keto,"Rava, Vegetables, Spices",295,36,Hard,Festive
+M2777,Chicken Manchurian,Indo-Chinese,Lunch,High-Protein,"Chicken, Maida, Spices",840,44,Easy,Restaurant-Special
+M2856,Veg Spring Rolls,Indo-Chinese,Dinner,Non-Vegetarian,"Vegetables, Maida, Spices",443,11,Easy,Daily
+M2326,Butter Chicken,North Indian,Lunch,Vegan,"Chicken, Butter, Tomato",214,31,Hard,Party
+M3183,Chilli Chicken,Indo-Chinese,Breakfast,Non-Vegetarian,"Chicken, Capsicum, Spices",715,44,Hard,Festive
+M3568,Chicken Manchurian,Indo-Chinese,Snack,High-Protein,"Chicken, Maida, Spices",241,36,Hard,Party
+M3571,Gobi Manchurian,Indo-Chinese,Snack,Non-Vegetarian,"Cauliflower, Maida, Spices",325,25,Hard,Restaurant-Special
+M2813,Chilli Chicken,Indo-Chinese,Snack,High-Protein,"Chicken, Capsicum, Spices",847,27,Easy,Restaurant-Special
+M2531,Chilli Chicken,Indo-Chinese,Breakfast,Gluten-Free,"Chicken, Capsicum, Spices",560,19,Easy,Restaurant-Special
+M0656,Pongal,South Indian,Breakfast,Vegan,"Rice, Moong Dal, Ghee",899,45,Easy,Daily
+M1910,Paneer Butter Masala,North Indian,Dinner,Keto,"Paneer, Tomato, Spices",567,22,Hard,Restaurant-Special
+M1746,Dal Makhani,North Indian,Breakfast,Non-Vegetarian,"Urad Dal, Butter, Cream",308,39,Hard,Restaurant-Special
+M2416,American Chopsuey,Indo-Chinese,Snack,Gluten-Free,"Noodles, Vegetables, Sauce",530,19,Hard,Restaurant-Special
+M2214,Chole Bhature,North Indian,Lunch,Keto,"Chickpeas, Maida, Spices",786,40,Easy,Restaurant-Special
+M0412,Curd Rice,South Indian,Dinner,Keto,"Rice, Curd, Spices",855,40,Easy,Festive
+M0979,Rasam Rice,South Indian,Breakfast,Non-Vegetarian,"Tamarind, Tomato, Spices",259,19,Easy,Party
+M1172,Curd Rice,South Indian,Snack,Gluten-Free,"Rice, Curd, Spices",568,32,Hard,Restaurant-Special
+M1432,Upma,South Indian,Dinner,Non-Vegetarian,"Rava, Vegetables, Spices",501,26,Medium,Daily
+M1075,Idli Sambar,South Indian,Lunch,Keto,"Rice, Lentils, Vegetables",275,30,Medium,Festive
+M1023,Fish Curry,South Indian,Breakfast,Non-Vegetarian,"Fish, Tamarind, Spices",491,45,Hard,Daily
+M3227,American Chopsuey,Indo-Chinese,Dinner,Gluten-Free,"Noodles, Vegetables, Sauce",747,42,Easy,Daily
+M0721,Upma,South Indian,Breakfast,Vegetarian,"Rava, Vegetables, Spices",601,17,Medium,Daily
+M0153,Lemon Rice,South Indian,Dinner,Gluten-Free,"Rice, Lemon, Spices",167,18,Easy,Daily
+M0949,Upma,South Indian,Lunch,Vegan,"Rava, Vegetables, Spices",831,17,Hard,Daily
+M2358,Rajma Chawal,North Indian,Lunch,Gluten-Free,"Rajma, Rice, Spices",873,45,Medium,Party
+M1831,Baingan Bharta,North Indian,Snack,Keto,"Brinjal, Onion, Tomato",836,33,Hard,Restaurant-Special
+M0103,Pongal,South Indian,Lunch,High-Protein,"Rice, Moong Dal, Ghee",630,25,Easy,Festive
+M3456,Gobi Manchurian,Indo-Chinese,Breakfast,Keto,"Cauliflower, Maida, Spices",815,12,Medium,Party
+M0732,Idli Sambar,South Indian,Dinner,Vegan,"Rice, Lentils, Vegetables",230,25,Easy,Restaurant-Special
+M0240,Lemon Rice,South Indian,Dinner,High-Protein,"Rice, Lemon, Spices",641,44,Easy,Restaurant-Special
+M3352,Veg Spring Rolls,Indo-Chinese,Dinner,Keto,"Vegetables, Maida, Spices",455,20,Hard,Festive
+M2974,Gobi Manchurian,Indo-Chinese,Snack,Vegan,"Cauliflower, Maida, Spices",334,34,Hard,Party
+M1728,Aloo Paratha,North Indian,Lunch,Gluten-Free,"Wheat, Potato, Spices",358,43,Medium,Festive
+M2094,Dal Makhani,North Indian,Lunch,Keto,"Urad Dal, Butter, Cream",539,10,Hard,Restaurant-Special
+M2841,Paneer Chilli,Indo-Chinese,Breakfast,Vegan,"Paneer, Capsicum, Soy Sauce",561,3,Medium,Festive
+M0858,Rasam Rice,South Indian,Lunch,Vegan,"Tamarind, Tomato, Spices",626,37,Easy,Party
+M1158,Vada,South Indian,Lunch,High-Protein,"Lentils, Spices",418,31,Easy,Party
+M0863,Lemon Rice,South Indian,Breakfast,Keto,"Rice, Lemon, Spices",188,3,Easy,Festive
+M2520,Hakka Noodles,Indo-Chinese,Snack,Vegan,"Noodles, Vegetables, Soy Sauce",305,25,Medium,Restaurant-Special
+M2848,Veg Spring Rolls,Indo-Chinese,Breakfast,Non-Vegetarian,"Vegetables, Maida, Spices",849,32,Medium,Daily
+M2726,American Chopsuey,Indo-Chinese,Dinner,Keto,"Noodles, Vegetables, Sauce",846,8,Medium,Party
+M3793,Schezwan Noodles,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Schezwan Sauce",835,43,Easy,Daily
+M0756,Pongal,South Indian,Lunch,Non-Vegetarian,"Rice, Moong Dal, Ghee",510,24,Easy,Party
+M0333,Rasam Rice,South Indian,Snack,Keto,"Tamarind, Tomato, Spices",279,14,Easy,Daily
+M0745,Idli Sambar,South Indian,Snack,Vegan,"Rice, Lentils, Vegetables",211,15,Easy,Party
+M3289,Chilli Chicken,Indo-Chinese,Dinner,Vegan,"Chicken, Capsicum, Spices",791,15,Easy,Daily
+M2644,Veg Fried Rice,Indo-Chinese,Breakfast,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",278,40,Easy,Daily
+M2275,Dal Makhani,North Indian,Dinner,Vegan,"Urad Dal, Butter, Cream",169,39,Easy,Festive
+M3632,Chicken Manchurian,Indo-Chinese,Dinner,Non-Vegetarian,"Chicken, Maida, Spices",782,16,Medium,Party
+M3803,Paneer Chilli,Indo-Chinese,Lunch,Vegan,"Paneer, Capsicum, Soy Sauce",426,30,Hard,Party
+M3780,Veg Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Mixed Veg, Soy Sauce",420,37,Medium,Daily
+M3129,Paneer Chilli,Indo-Chinese,Breakfast,High-Protein,"Paneer, Capsicum, Soy Sauce",193,3,Hard,Restaurant-Special
+M2084,Kadhi Pakora,North Indian,Lunch,Gluten-Free,"Besan, Curd, Spices",349,44,Easy,Party
+M2703,Veg Fried Rice,Indo-Chinese,Dinner,Gluten-Free,"Rice, Mixed Veg, Soy Sauce",341,33,Medium,Party
+M3963,Schezwan Noodles,Indo-Chinese,Lunch,Gluten-Free,"Noodles, Vegetables, Schezwan Sauce",676,35,Medium,Restaurant-Special
+M0908,Curd Rice,South Indian,Breakfast,Gluten-Free,"Rice, Curd, Spices",643,5,Easy,Daily
+M2284,Chole Bhature,North Indian,Dinner,Keto,"Chickpeas, Maida, Spices",339,40,Easy,Festive
+M1164,Fish Curry,South Indian,Lunch,High-Protein,"Fish, Tamarind, Spices",845,26,Medium,Daily
+M2184,Palak Paneer,North Indian,Snack,High-Protein,"Spinach, Paneer, Spices",609,4,Medium,Restaurant-Special
+M3723,American Chopsuey,Indo-Chinese,Breakfast,Keto,"Noodles, Vegetables, Sauce",480,24,Hard,Party
+M2212,Butter Chicken,North Indian,Dinner,Vegetarian,"Chicken, Butter, Tomato",516,10,Medium,Party
+M2068,Aloo Paratha,North Indian,Breakfast,High-Protein,"Wheat, Potato, Spices",895,31,Hard,Restaurant-Special
+M0555,Chicken Chettinad,South Indian,Snack,Gluten-Free,"Chicken, Coconut, Spices",150,24,Easy,Festive
+M3026,American Chopsuey,Indo-Chinese,Snack,High-Protein,"Noodles, Vegetables, Sauce",640,20,Hard,Festive
+M3610,Chilli Chicken,Indo-Chinese,Lunch,Gluten-Free,"Chicken, Capsicum, Spices",352,4,Easy,Restaurant-Special
+M0832,Chicken Chettinad,South Indian,Snack,Gluten-Free,"Chicken, Coconut, Spices",501,42,Easy,Daily
+M3432,Gobi Manchurian,Indo-Chinese,Breakfast,Vegan,"Cauliflower, Maida, Spices",574,40,Easy,Restaurant-Special
+M3202,Gobi Manchurian,Indo-Chinese,Dinner,Gluten-Free,"Cauliflower, Maida, Spices",591,36,Medium,Festive
+M2091,Rajma Chawal,North Indian,Breakfast,High-Protein,"Rajma, Rice, Spices",568,44,Medium,Festive
+M1755,Kadhi Pakora,North Indian,Lunch,Non-Vegetarian,"Besan, Curd, Spices",185,17,Easy,Restaurant-Special
+M0812,Lemon Rice,South Indian,Breakfast,Vegetarian,"Rice, Lemon, Spices",619,38,Hard,Party
+M0889,Rasam Rice,South Indian,Lunch,High-Protein,"Tamarind, Tomato, Spices",689,19,Hard,Festive
+M2464,Veg Spring Rolls,Indo-Chinese,Breakfast,Non-Vegetarian,"Vegetables, Maida, Spices",874,9,Hard,Daily
+M2989,American Chopsuey,Indo-Chinese,Snack,Keto,"Noodles, Vegetables, Sauce",551,44,Easy,Daily
+M1660,Aloo Paratha,North Indian,Dinner,Keto,"Wheat, Potato, Spices",832,31,Hard,Daily
+M2510,Chicken Fried Rice,Indo-Chinese,Dinner,High-Protein,"Rice, Chicken, Soy Sauce",240,44,Easy,Restaurant-Special
+M1234,Pongal,South Indian,Snack,Keto,"Rice, Moong Dal, Ghee",338,9,Medium,Restaurant-Special
+M3874,Chicken Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Chicken, Soy Sauce",724,18,Easy,Party
+M1449,Rajma Chawal,North Indian,Breakfast,Non-Vegetarian,"Rajma, Rice, Spices",554,19,Easy,Daily
+M2874,Chicken Fried Rice,Indo-Chinese,Breakfast,Keto,"Rice, Chicken, Soy Sauce",607,30,Hard,Daily
+M1966,Kadhi Pakora,North Indian,Dinner,Gluten-Free,"Besan, Curd, Spices",430,12,Easy,Daily
+M0694,Masala Dosa,South Indian,Lunch,Gluten-Free,"Rice, Lentils, Potato",317,14,Medium,Party
+M1058,Upma,South Indian,Lunch,Vegetarian,"Rava, Vegetables, Spices",391,38,Hard,Festive
+M1799,Kadhi Pakora,North Indian,Lunch,High-Protein,"Besan, Curd, Spices",816,22,Hard,Festive
+M1028,Masala Dosa,South Indian,Lunch,Vegetarian,"Rice, Lentils, Potato",557,22,Hard,Festive
+M1537,Paneer Butter Masala,North Indian,Snack,High-Protein,"Paneer, Tomato, Spices",866,13,Easy,Daily
+M3433,Chicken Manchurian,Indo-Chinese,Dinner,Vegetarian,"Chicken, Maida, Spices",464,4,Medium,Daily
+M1703,Rajma Chawal,North Indian,Snack,Keto,"Rajma, Rice, Spices",263,26,Easy,Party
+M2336,Palak Paneer,North Indian,Lunch,Gluten-Free,"Spinach, Paneer, Spices",592,25,Easy,Festive
+M0347,Chicken Chettinad,South Indian,Dinner,Vegan,"Chicken, Coconut, Spices",480,42,Medium,Restaurant-Special
+M0924,Vada,South Indian,Dinner,Gluten-Free,"Lentils, Spices",297,42,Easy,Restaurant-Special
+M3260,Paneer Chilli,Indo-Chinese,Dinner,Non-Vegetarian,"Paneer, Capsicum, Soy Sauce",750,26,Easy,Festive
+M1188,Idli Sambar,South Indian,Breakfast,High-Protein,"Rice, Lentils, Vegetables",153,36,Medium,Festive
+M0843,Rasam Rice,South Indian,Dinner,Keto,"Tamarind, Tomato, Spices",258,29,Medium,Party
+M3279,Gobi Manchurian,Indo-Chinese,Snack,Gluten-Free,"Cauliflower, Maida, Spices",629,45,Easy,Festive
+M3777,Veg Spring Rolls,Indo-Chinese,Breakfast,High-Protein,"Vegetables, Maida, Spices",254,19,Medium,Restaurant-Special
+M2728,American Chopsuey,Indo-Chinese,Lunch,Vegan,"Noodles, Vegetables, Sauce",879,10,Medium,Restaurant-Special
+M2828,Veg Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Mixed Veg, Soy Sauce",362,30,Medium,Festive
+M1421,Curd Rice,South Indian,Snack,Keto,"Rice, Curd, Spices",786,28,Easy,Restaurant-Special
+M1925,Palak Paneer,North Indian,Breakfast,Keto,"Spinach, Paneer, Spices",500,21,Hard,Festive
+M0179,Masala Dosa,South Indian,Lunch,Non-Vegetarian,"Rice, Lentils, Potato",658,12,Easy,Festive
+M2277,Aloo Paratha,North Indian,Breakfast,Vegan,"Wheat, Potato, Spices",489,13,Hard,Festive
+M3186,Gobi Manchurian,Indo-Chinese,Dinner,Keto,"Cauliflower, Maida, Spices",599,13,Easy,Party
+M0813,Pongal,South Indian,Breakfast,Keto,"Rice, Moong Dal, Ghee",391,7,Easy,Party
+M1878,Dal Makhani,North Indian,Dinner,Vegan,"Urad Dal, Butter, Cream",840,37,Medium,Festive
+M1337,Masala Dosa,South Indian,Breakfast,Vegetarian,"Rice, Lentils, Potato",836,43,Hard,Daily
+M3159,Hakka Noodles,Indo-Chinese,Lunch,Keto,"Noodles, Vegetables, Soy Sauce",559,20,Easy,Party
+M3108,Chilli Chicken,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Capsicum, Spices",493,13,Easy,Daily
+M1558,Rajma Chawal,North Indian,Breakfast,Keto,"Rajma, Rice, Spices",297,33,Easy,Festive
+M2802,Chicken Fried Rice,Indo-Chinese,Snack,Non-Vegetarian,"Rice, Chicken, Soy Sauce",204,8,Hard,Party
+M2177,Biryani,North Indian,Lunch,Vegetarian,"Rice, Meat/Vegetables, Spices",854,34,Hard,Party
+M1813,Paneer Butter Masala,North Indian,Breakfast,High-Protein,"Paneer, Tomato, Spices",167,38,Easy,Party
+M0174,Fish Curry,South Indian,Dinner,Keto,"Fish, Tamarind, Spices",358,27,Medium,Restaurant-Special
+M2355,Butter Chicken,North Indian,Breakfast,Non-Vegetarian,"Chicken, Butter, Tomato",753,26,Hard,Party
+M3058,Schezwan Noodles,Indo-Chinese,Breakfast,Vegan,"Noodles, Vegetables, Schezwan Sauce",695,42,Easy,Festive
+M0332,Fish Curry,South Indian,Snack,Vegetarian,"Fish, Tamarind, Spices",535,30,Easy,Daily
+M1362,Chicken Chettinad,South Indian,Breakfast,Vegetarian,"Chicken, Coconut, Spices",712,24,Easy,Daily
+M0431,Fish Curry,South Indian,Dinner,Vegetarian,"Fish, Tamarind, Spices",596,19,Hard,Restaurant-Special
+M3653,Chilli Chicken,Indo-Chinese,Lunch,Vegetarian,"Chicken, Capsicum, Spices",647,29,Medium,Party
+M2010,Biryani,North Indian,Snack,Keto,"Rice, Meat/Vegetables, Spices",341,35,Hard,Party
+M1105,Fish Curry,South Indian,Snack,Vegetarian,"Fish, Tamarind, Spices",208,11,Easy,Daily
+M2563,Veg Fried Rice,Indo-Chinese,Snack,Vegan,"Rice, Mixed Veg, Soy Sauce",639,36,Hard,Daily
+M0480,Curd Rice,South Indian,Lunch,High-Protein,"Rice, Curd, Spices",550,15,Hard,Daily
+M1279,Upma,South Indian,Dinner,Non-Vegetarian,"Rava, Vegetables, Spices",316,28,Medium,Daily
+M2604,Chicken Fried Rice,Indo-Chinese,Lunch,Keto,"Rice, Chicken, Soy Sauce",286,31,Medium,Party
+M0747,Idli Sambar,South Indian,Breakfast,Non-Vegetarian,"Rice, Lentils, Vegetables",532,10,Medium,Daily
+M1770,Paneer Butter Masala,North Indian,Lunch,Vegetarian,"Paneer, Tomato, Spices",752,23,Medium,Restaurant-Special
+M3555,Veg Fried Rice,Indo-Chinese,Dinner,High-Protein,"Rice, Mixed Veg, Soy Sauce",209,14,Medium,Festive
+M2338,Rajma Chawal,North Indian,Lunch,Vegan,"Rajma, Rice, Spices",820,34,Easy,Restaurant-Special
+M3752,Chicken Manchurian,Indo-Chinese,Breakfast,Vegetarian,"Chicken, Maida, Spices",615,32,Easy,Festive
+M1941,Biryani,North Indian,Snack,High-Protein,"Rice, Meat/Vegetables, Spices",296,9,Easy,Restaurant-Special
+M1796,Butter Chicken,North Indian,Lunch,Gluten-Free,"Chicken, Butter, Tomato",727,42,Hard,Daily
+M0325,Lemon Rice,South Indian,Snack,Keto,"Rice, Lemon, Spices",203,14,Medium,Party
+M1269,Fish Curry,South Indian,Breakfast,High-Protein,"Fish, Tamarind, Spices",880,37,Easy,Restaurant-Special
+M0469,Curd Rice,South Indian,Snack,Keto,"Rice, Curd, Spices",227,13,Easy,Daily
+M0562,Chicken Chettinad,South Indian,Lunch,High-Protein,"Chicken, Coconut, Spices",275,23,Hard,Daily
+M2631,Gobi Manchurian,Indo-Chinese,Lunch,Gluten-Free,"Cauliflower, Maida, Spices",412,9,Easy,Daily
+M2351,Aloo Paratha,North Indian,Breakfast,Vegan,"Wheat, Potato, Spices",248,44,Easy,Restaurant-Special
+M2079,Chole Bhature,North Indian,Lunch,Non-Vegetarian,"Chickpeas, Maida, Spices",793,31,Easy,Restaurant-Special
+M3785,Veg Fried Rice,Indo-Chinese,Lunch,High-Protein,"Rice, Mixed Veg, Soy Sauce",290,36,Medium,Restaurant-Special
+M2971,Hakka Noodles,Indo-Chinese,Lunch,High-Protein,"Noodles, Vegetables, Soy Sauce",333,4,Easy,Restaurant-Special
+M2347,Kadhi Pakora,North Indian,Lunch,Keto,"Besan, Curd, Spices",336,11,Easy,Festive
+M0062,Rasam Rice,South Indian,Snack,Vegetarian,"Tamarind, Tomato, Spices",604,12,Hard,Party
+M2804,Gobi Manchurian,Indo-Chinese,Lunch,Non-Vegetarian,"Cauliflower, Maida, Spices",624,10,Easy,Daily
+M1898,Aloo Paratha,North Indian,Breakfast,Non-Vegetarian,"Wheat, Potato, Spices",195,5,Easy,Restaurant-Special
+M2877,Gobi Manchurian,Indo-Chinese,Snack,High-Protein,"Cauliflower, Maida, Spices",560,29,Hard,Daily
+M0255,Fish Curry,South Indian,Breakfast,Vegan,"Fish, Tamarind, Spices",526,24,Medium,Daily
+M3782,Schezwan Noodles,Indo-Chinese,Dinner,Keto,"Noodles, Vegetables, Schezwan Sauce",741,14,Hard,Daily
+M1095,Chicken Chettinad,South Indian,Breakfast,High-Protein,"Chicken, Coconut, Spices",291,34,Hard,Daily
+M1062,Rasam Rice,South Indian,Snack,Gluten-Free,"Tamarind, Tomato, Spices",183,30,Medium,Restaurant-Special
+M0916,Pongal,South Indian,Snack,Vegetarian,"Rice, Moong Dal, Ghee",153,5,Medium,Daily
+M1042,Upma,South Indian,Snack,Keto,"Rava, Vegetables, Spices",675,24,Easy,Daily
+M2567,Hakka Noodles,Indo-Chinese,Breakfast,Keto,"Noodles, Vegetables, Soy Sauce",247,29,Hard,Restaurant-Special
+M0068,Idli Sambar,South Indian,Dinner,Gluten-Free,"Rice, Lentils, Vegetables",893,12,Hard,Party
+M1872,Paneer Butter Masala,North Indian,Breakfast,Keto,"Paneer, Tomato, Spices",736,18,Hard,Party
+M2789,Chicken Fried Rice,Indo-Chinese,Lunch,Gluten-Free,"Rice, Chicken, Soy Sauce",515,20,Easy,Daily
+M0222,Vada,South Indian,Snack,Gluten-Free,"Lentils, Spices",889,12,Hard,Party
+M1963,Palak Paneer,North Indian,Lunch,Keto,"Spinach, Paneer, Spices",844,16,Easy,Daily
+M2409,Veg Fried Rice,Indo-Chinese,Breakfast,Vegan,"Rice, Mixed Veg, Soy Sauce",551,22,Medium,Restaurant-Special
+M2878,American Chopsuey,Indo-Chinese,Lunch,High-Protein,"Noodles, Vegetables, Sauce",476,12,Easy,Restaurant-Special
+M3174,Veg Spring Rolls,Indo-Chinese,Snack,Vegan,"Vegetables, Maida, Spices",274,30,Easy,Festive
+M0089,Lemon Rice,South Indian,Breakfast,Keto,"Rice, Lemon, Spices",254,35,Hard,Daily
+M1808,Paneer Butter Masala,North Indian,Lunch,Gluten-Free,"Paneer, Tomato, Spices",310,30,Medium,Party
+M1676,Kadhi Pakora,North Indian,Snack,High-Protein,"Besan, Curd, Spices",875,31,Hard,Daily
+M2829,Chicken Manchurian,Indo-Chinese,Lunch,Non-Vegetarian,"Chicken, Maida, Spices",508,36,Medium,Party
+M1489,Rajma Chawal,North Indian,Dinner,Gluten-Free,"Rajma, Rice, Spices",222,39,Hard,Party
+M3033,Chicken Manchurian,Indo-Chinese,Dinner,Gluten-Free,"Chicken, Maida, Spices",572,9,Hard,Festive
+M1722,Butter Chicken,North Indian,Lunch,Keto,"Chicken, Butter, Tomato",409,18,Easy,Festive
+M3807,American Chopsuey,Indo-Chinese,Snack,High-Protein,"Noodles, Vegetables, Sauce",404,31,Medium,Party
+M0437,Vada,South Indian,Dinner,Gluten-Free,"Lentils, Spices",630,37,Easy,Restaurant-Special
+M3580,Chicken Manchurian,Indo-Chinese,Dinner,Vegan,"Chicken, Maida, Spices",618,12,Medium,Festive
+M3601,Schezwan Noodles,Indo-Chinese,Lunch,Vegetarian,"Noodles, Vegetables, Schezwan Sauce",691,8,Hard,Daily
+M3190,Paneer Chilli,Indo-Chinese,Breakfast,Vegan,"Paneer, Capsicum, Soy Sauce",444,6,Hard,Party
+M3403,Veg Spring Rolls,Indo-Chinese,Dinner,Vegan,"Vegetables, Maida, Spices",297,31,Medium,Festive
+M2348,Biryani,North Indian,Snack,Vegan,"Rice, Meat/Vegetables, Spices",403,7,Easy,Daily
+M3442,Chilli Chicken,Indo-Chinese,Lunch,High-Protein,"Chicken, Capsicum, Spices",722,45,Hard,Festive
+M3570,Hakka Noodles,Indo-Chinese,Snack,High-Protein,"Noodles, Vegetables, Soy Sauce",374,28,Hard,Restaurant-Special
+M1514,Butter Chicken,North Indian,Breakfast,Vegetarian,"Chicken, Butter, Tomato",819,16,Hard,Daily
+M2649,Chicken Manchurian,Indo-Chinese,Breakfast,Vegetarian,"Chicken, Maida, Spices",257,16,Hard,Party
+M3275,Hakka Noodles,Indo-Chinese,Dinner,Gluten-Free,"Noodles, Vegetables, Soy Sauce",865,19,Easy,Party
+M1737,Baingan Bharta,North Indian,Lunch,Gluten-Free,"Brinjal, Onion, Tomato",367,20,Easy,Party
+M1403,Fish Curry,South Indian,Lunch,Vegan,"Fish, Tamarind, Spices",484,23,Medium,Party
+M0284,Pongal,South Indian,Lunch,High-Protein,"Rice, Moong Dal, Ghee",526,38,Hard,Party
+M0713,Chicken Chettinad,South Indian,Breakfast,High-Protein,"Chicken, Coconut, Spices",790,6,Hard,Party
+M0275,Lemon Rice,South Indian,Lunch,Vegetarian,"Rice, Lemon, Spices",629,29,Easy,Party
+M2273,Rajma Chawal,North Indian,Breakfast,Vegetarian,"Rajma, Rice, Spices",384,6,Medium,Restaurant-Special
+M0622,Upma,South Indian,Breakfast,Gluten-Free,"Rava, Vegetables, Spices",297,9,Medium,Restaurant-Special
+M1923,Dal Makhani,North Indian,Lunch,Keto,"Urad Dal, Butter, Cream",781,5,Medium,Festive
+M0866,Vada,South Indian,Lunch,Gluten-Free,"Lentils, Spices",692,34,Easy,Festive
+M3944,Gobi Manchurian,Indo-Chinese,Lunch,Keto,"Cauliflower, Maida, Spices",843,5,Easy,Festive
+M1643,Butter Chicken,North Indian,Breakfast,Gluten-Free,"Chicken, Butter, Tomato",601,10,Easy,Festive
+M2484,Gobi Manchurian,Indo-Chinese,Breakfast,Gluten-Free,"Cauliflower, Maida, Spices",447,26,Medium,Party

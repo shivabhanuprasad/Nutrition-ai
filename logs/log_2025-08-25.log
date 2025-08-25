@@ -1,0 +1,23 @@
+2025-08-25 15:22:16,709-INFO-Starting main program
+2025-08-25 15:22:16,710-INFO-dividing 2 numbers
+2025-08-25 15:49:51,291-INFO-Entered data ingestion.
+2025-08-25 15:49:51,379-INFO-Read dataset: shape=(4000, 10)
+2025-08-25 15:49:51,406-INFO-Performing 80/20 train-test split...
+2025-08-25 15:49:51,447-INFO-Data ingestion completed.
+2025-08-25 15:52:02,825-INFO-Entered data ingestion.
+2025-08-25 15:52:02,841-INFO-Read dataset: shape=(4000, 10)
+2025-08-25 15:52:02,867-INFO-Performing 80/20 train-test split...
+2025-08-25 15:52:02,894-INFO-Data ingestion completed.
+2025-08-25 15:52:02,957-INFO-Loaded train/test: (3200, 10) / (800, 10)
+2025-08-25 15:52:02,963-INFO-Numerical features: ['Calories_per_Serving', 'Protein_Content(g)']
+2025-08-25 15:52:02,963-INFO-Categorical features: ['Meal_ID', 'Cuisine_Type', 'Meal_Type', 'Dietary_Preference', 'Main_Ingredients', 'Difficulty_Level', 'Occasion_Type']
+2025-08-25 15:52:02,977-INFO-Fitting preprocessor and transforming data...
+2025-08-25 15:52:03,175-INFO-Saved preprocessor to artifacts\preprocessor.pkl
+2025-08-25 15:52:03,175-INFO-Saved label encoder to artifacts\label_encoder.pkl
+2025-08-25 15:52:03,176-INFO-Splitting arrays into X/y for training and testing...
+2025-08-25 15:52:03,176-INFO-\U0001f504 Training Decision Tree...
+2025-08-25 15:52:19,457-INFO-\u2705 Decision Tree finished | Accuracy = 1.0000
+2025-08-25 15:52:19,460-INFO-\U0001f504 Training Random Forest...
+2025-08-25 15:52:41,228-INFO-\u2705 Random Forest finished | Accuracy = 1.0000
+2025-08-25 15:52:41,228-INFO-Best model: Decision Tree | Accuracy = 1.0000
+2025-08-25 15:52:41,275-INFO-Saved best model (Decision Tree) to artifacts\model.pkl
