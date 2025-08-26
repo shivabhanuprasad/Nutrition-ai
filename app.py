@@ -1,113 +1,43 @@
+import sys, os
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 import streamlit as st
 import pandas as pd
-import sys
-import os
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import joblib
+import datetime
+from datetime import time
+import pytz
+import time as t
 from pathlib import Path
+from src.pipeline.predict_pipeline import PredictPipeline
+from src.exception import CustomException
 
-# --- Path Setup (FIXED for Deployment) ---
-# This logic correctly finds the project's root directory and adds it to the
-# system path, allowing for absolute imports from the 'src' package.
-try:
-    # Get the absolute path of the directory containing app.py (the project root)
-    project_root = Path(__file__).resolve().parent
-    # Add the project root to the system path
-    if str(project_root) not in sys.path:
-        sys.path.append(str(project_root))
+# Set page configuration
+st.set_page_config(
+    page_title="NutriPlan AI",
+    page_icon="🍲",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-    # Now, perform absolute imports from the 'src' package
-    from src.Pipeline.predict_pipeline import PredictPipeline
-    from src.exception import CustomException
+# --- Helper function to load external CSS ---
+def load_css(css_file_name):
+    try:
+        current_dir = os.path.dirname(__file__)
+        css_file_path = os.path.join(current_dir, css_file_name)
+        with open(css_file_path) as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except FileNotFoundError:
+        st.error(f"Error: CSS file '{css_file_name}' not found. Please ensure it is in the same directory as app.py.")
+    except Exception as e:
+        st.error(f"Error loading CSS file: {e}")
 
-except ImportError as e:
-    st.error(f"Import Error: {e}. Please ensure your project structure is correct. The app expects an 'src' directory in the same folder as app.py, containing your modules.")
-    st.stop()
-
-
-# --- Custom CSS for Styling ---
-st.markdown("""
-<style>
-    /* App background */
-    .stApp {
-        background: #000000; /* Black background */
-        background-attachment: fixed;
-    }
-
-    /* General text color for the app, including labels and paragraphs */
-    body, .st-emotion-cache-10trblm, .st-emotion-cache-1kyxreq, .st-emotion-cache-aabc9x, .st-emotion-cache-z5fcl4, label, .st-emotion-cache-16idsys p {
-        color: white !important; /* Black for all text */
-    }
-
-    /* Main container styling */
-    .main .block-container {
-        background-color: #ffcc80; /* Light orange main container */
-        padding: 2.5rem;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        max-width: 950px;
-        margin: auto;
-    }
-
-    /* Headings and titles */
-    h1, h2, h3, h4 {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        color: white !important; /* Black for main headings */
-        text-align: center;
-    }
-
-    /* Section card styling */
-    .section-box {
-        background: #ffe0b2; /* Lighter orange/cream for input box */
-        padding: 1.5rem 2rem;
-        border-radius: 12px;
-        margin-top: 1.5rem;
-        border: 1px solid #ffb74d; /* Darker orange border */
-    }
-    .section-box h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1.5rem;
-        color: #000000 !important; /* Black for section titles */
-    }
-
-    /* Button styling */
-    .stButton>button {
-        background: linear-gradient(90deg, #ff7043, #ff5722); /* Coral/orange gradient */
-        color: #000000; /* Black text for contrast on button, as requested */
-        border-radius: 8px;
-        border: 2px solid #000000; /* Black border for definition */
-        font-size: 1.1rem;
-        font-weight: 700;
-        padding: 0.75rem 1.5rem;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        transition: all 0.3s ease;
-        width: 100%;
-    }
-    .stButton>button:hover {
-        background: linear-gradient(90deg, #f4511e, #e64a19); /* Darker coral/orange */
-        transform: scale(1.02);
-    }
-
-    /* Styling for dataframes */
-    .dataframe {
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    
-    /* Custom style for result cards */
-    .result-card {
-        background-color: #ffe0b2; /* Lighter orange to match section box */
-        border-left: 5px solid #ff9800; /* Amber border */
-        border-radius: 5px;
-        padding: 1rem;
-        margin-bottom: 1rem; /* Space between cards */
-    }
-    .result-card p, .result-card strong {
-        color: #000000 !important; /* Black text for dish names */
-    }
-</style>
-""", unsafe_allow_html=True)
-
+# Load the external CSS file
+load_css("style.css")
 
 # --- Data Loading and Caching ---
 @st.cache_data
@@ -136,167 +66,248 @@ if 'user_input_display' not in st.session_state:
     st.session_state.user_input_display = None
 if 'last_inputs' not in st.session_state:
     st.session_state.last_inputs = {}
-
+# Initialize session state for page navigation
+if 'current_page' not in st.session_state:
+    st.session_state.current_page = "Recommender" # Default to the main recommender page
 
 # Load the main dataset
 nutri_df = load_data()
 
+# --- Image URLs for Dynamic Backgrounds (Publicly Hosted) ---
+# Using reliable publicly hosted URLs from Unsplash for guaranteed display
+recommender_bg_image_url = "https://images.unsplash.com/photo-1555939594-58d7ab87130f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80" # Colorful cooked meal
+about_bg_image_url = "https://images.unsplash.com/photo-1512621776951-a579b2d893f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80"     # Healthy fresh ingredients
+
+
 if nutri_df is not None:
+    # --- Dynamic Background Image Injection for the BODY element ---
+    # This CSS is injected directly onto the 'body' to ensure it's the outermost background.
+    # The '!important' flag helps override any default Streamlit body styling.
+    current_bg_url = ""
+    if st.session_state.current_page == "Recommender":
+        current_bg_url = recommender_bg_image_url
+    elif st.session_state.current_page == "About":
+        current_bg_url = about_bg_image_url
+    
+    # Only inject if a URL is determined to avoid empty background-image property
+    if current_bg_url:
+        st.markdown(f"""
+            <style>
+                body {{
+                    background-image: url('{current_bg_url}') !important;
+                    background-size: cover !important;
+                    background-position: center !important;
+                    background-repeat: no-repeat !important;
+                    background-attachment: fixed !important;
+                }}
+            </style>
+            """, unsafe_allow_html=True)
+
     # --- App Title and Header ---
-    st.title("🍲 NutriPlan AI - Smart Dish Recommender(Indian and Chinese)")
-    st.markdown("### Your personal guide to healthy and delicious meals.")
+    st.markdown('<h1 class="main-header">🍲 NutriPlan AI - Smart Dish Recommender</h1>', unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 1.3em; color: #f0f0f0;'>Your personal guide to healthy and delicious meals.</p>", unsafe_allow_html=True)
 
-    # --- Input Form Section ---
-    with st.container():
-        st.markdown('<div class="section-box"> <h2>🥗 Find Your Perfect Dish</h2>', unsafe_allow_html=True)
-
-        cuisine_types = sorted(nutri_df['Cuisine_Type'].unique())
-        meal_types = sorted(nutri_df['Meal_Type'].unique())
-        dietary_preferences = sorted(nutri_df['Dietary_Preference'].unique())
-        occasion_types = sorted(nutri_df['Occasion_Type'].unique())
-        all_ingredients_list = get_unique_ingredients(nutri_df)
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            cuisine = st.selectbox("Cuisine Type", cuisine_types)
-            meal_type = st.selectbox("Meal Type", meal_types)
-            difficulty = st.selectbox("Difficulty Level", ["Easy", "Medium", "Hard"])
-            occasion = st.selectbox("Occasion Type", occasion_types)
-
-        with col2:
-            diet = st.selectbox("Dietary Preference", dietary_preferences)
-            ingredients_list = st.multiselect(
-                "Select Your Available Ingredients",
-                all_ingredients_list,
-                default=["Rice", "Chicken"]
-            )
-            ingredients_str = ", ".join(ingredients_list)
-
-        st.markdown("<h4 style='text-align: center; color: #000000; margin-top: 2rem;'>Nutritional Goals</h4>", unsafe_allow_html=True)
-        calorie_range = st.slider(
-            "Calories per Serving",
-            min_value=int(nutri_df['Calories_per_Serving'].min()),
-            max_value=int(nutri_df['Calories_per_Serving'].max()),
-            value=(150, 700)
-        )
-
-        st.markdown('</div>', unsafe_allow_html=True)
+    # --- Navigation Buttons ---
+    col_nav1, col_nav2 = st.columns(2)
+    with col_nav1:
+        if st.button("🍽️ Dish Recommender", use_container_width=True, key="nav_recommender"):
+            st.session_state.current_page = "Recommender"
+    with col_nav2:
+        if st.button("💡 About NutriPlan AI", use_container_width=True, key="nav_about"):
+            st.session_state.current_page = "About"
     
-    # --- State Management Logic ---
-    current_inputs = {
-        "cuisine": cuisine, "meal_type": meal_type, "difficulty": difficulty,
-        "occasion": occasion, "diet": diet, "ingredients": ingredients_str,
-        "calories": calorie_range
-    }
-    
-    if current_inputs != st.session_state.last_inputs:
-        st.session_state.recommendations = None
-        st.session_state.user_input_display = None
+    st.markdown("<br>", unsafe_allow_html=True) # Add some spacing
 
-
-    # --- Prediction Logic ---
-    if st.button("🍽️ Suggest Dishes"):
-        if not ingredients_list:
-            st.warning("Please select at least one ingredient.")
-        else:
-            try:
-                st.session_state.user_input_display = {
-                    "Cuisine Type": cuisine, "Meal Type": meal_type, "Dietary Preference": diet,
-                    "Ingredients": ingredients_str, "Difficulty": difficulty, "Occasion": occasion,
-                    "Calorie Range": f"{calorie_range[0]} - {calorie_range[1]} kcal"
-                }
-                st.session_state.last_inputs = current_inputs
-
-                input_data = {
-                    "Meal_ID": "dummy_id", "Cuisine_Type": cuisine, "Meal_Type": meal_type,
-                    "Dietary_Preference": diet, "Main_Ingredients": ingredients_str,
-                    "Difficulty_Level": difficulty, "Occasion_Type": occasion,
-                    "Calories_per_Serving": 0, "Protein_Content(g)": 0,
-                }
-                input_df = pd.DataFrame([input_data])
-                
-                pipeline = PredictPipeline()
-                results = pipeline.predict(input_df, top_k=20)
-                
-                if results:
-                    results_df = pd.DataFrame(results)
-                    if 'Max_Calories' in results_df.columns:
-                        results_df = results_df.rename(columns={'Max_Calories': 'Calories_per_Serving'})
-                    
-                    filtered_results = results_df[
-                        results_df['Calories_per_Serving'].between(calorie_range[0], calorie_range[1])
-                    ].head(5)
-                    
-                    st.session_state.recommendations = filtered_results
-                else:
-                    st.session_state.recommendations = pd.DataFrame()
-
-            except CustomException as e:
-                st.error(f"A prediction error occurred: {e}")
-                st.session_state.recommendations = None
-            except Exception as e:
-                st.error(f"An unexpected error occurred: {e}")
-                st.session_state.recommendations = None
-
-    # --- Display Results Section ---
-    if st.session_state.user_input_display:
-        st.subheader("📋 Your Preferences")
+    # --- Page Content based on Navigation ---
+    if st.session_state.current_page == "Recommender":
+        # --- Input Form Section ---
         with st.container():
-            st.markdown('<div class="result-card">', unsafe_allow_html=True)
-            for key, value in st.session_state.user_input_display.items():
-                st.markdown(f"**{key}:** {value}")
+            st.markdown('<div class="card"> <h2 class="sub-header">✨ Customize Your Dish Search</h2>', unsafe_allow_html=True)
+
+            cuisine_types = sorted(nutri_df['Cuisine_Type'].unique())
+            meal_types = sorted(nutri_df['Meal_Type'].unique())
+            dietary_preferences = sorted(nutri_df['Dietary_Preference'].unique())
+            occasion_types = sorted(nutri_df['Occasion_Type'].unique())
+            all_ingredients_list = get_unique_ingredients(nutri_df)
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                cuisine = st.selectbox("Cuisine Type 🌍", cuisine_types)
+                meal_type = st.selectbox("Meal Type 🍽️", meal_types)
+                difficulty = st.selectbox("Difficulty Level 🌶️", ["Easy", "Medium", "Hard"])
+                occasion = st.selectbox("Occasion Type 🎉", occasion_types)
+
+            with col2:
+                diet = st.selectbox("Dietary Preference 🌱", dietary_preferences)
+                ingredients_list = st.multiselect(
+                    "Select Your Available Ingredients 🥕",
+                    all_ingredients_list,
+                    default=["Rice", "Chicken"]
+                )
+                ingredients_str = ", ".join(ingredients_list)
+
+                st.markdown("<h4 style='text-align: center; color: #4ecdc4;'>Nutritional Goals 📊</h4>", unsafe_allow_html=True)
+                calorie_range = st.slider(
+                    "Calories per Serving �",
+                    min_value=int(nutri_df['Calories_per_Serving'].min()),
+                    max_value=int(nutri_df['Calories_per_Serving'].max()),
+                    value=(150, 700)
+                )
+
             st.markdown('</div>', unsafe_allow_html=True)
 
-
-    if st.session_state.recommendations is not None:
-        st.subheader("🍛 Top Dish Suggestions")
+        # --- State Management Logic ---
+        current_inputs = {
+            "cuisine": cuisine, "meal_type": meal_type, "difficulty": difficulty,
+            "occasion": occasion, "diet": diet, "ingredients": ingredients_str,
+            "calories": calorie_range
+        }
         
-        recommendations = st.session_state.recommendations
-        if recommendations.empty:
-            st.info("No suggestions found for your criteria. Try adjusting the filters.")
-        else:
-            for index, row in recommendations.iterrows():
-                dish_details = nutri_df[nutri_df['Dish_Name'] == row['Dish_Name']].iloc[0]
-                with st.container():
-                    st.markdown('<div class="result-card">', unsafe_allow_html=True)
-                    st.markdown(f"<h4>{dish_details['Dish_Name']}</h4>", unsafe_allow_html=True)
-                    st.markdown(f"**Calories:** {dish_details['Calories_per_Serving']} kcal")
-                    st.markdown(f"**Cuisine:** {dish_details['Cuisine_Type']}")
-                    st.markdown(f"**Ingredients:** {dish_details['Main_Ingredients']}")
-                    st.markdown('</div>', unsafe_allow_html=True)
+        if current_inputs != st.session_state.last_inputs:
+            st.session_state.recommendations = None
+            st.session_state.user_input_display = None
 
-            st.markdown("---")
-            st.subheader("💪 Want a More Indulgent Option?")
-            st.markdown("Select a dish to find a similar, higher-calorie alternative.")
+        # --- Prediction Logic ---
+        if st.button("🍽️ Suggest Dishes", use_container_width=True, key="suggest_dishes_button"):
+            if not ingredients_list:
+                st.warning("⚠️ Please select at least one ingredient.")
+            else:
+                try:
+                    st.session_state.user_input_display = {
+                        "Cuisine Type": cuisine, "Meal Type": meal_type, "Dietary Preference": diet,
+                        "Ingredients": ingredients_str, "Difficulty": difficulty, "Occasion": occasion,
+                        "Calorie Range": f"{calorie_range[0]} - {calorie_range[1]} kcal"
+                    }
+                    st.session_state.last_inputs = current_inputs
 
-            selected_dish_name = st.selectbox(
-                "Choose a dish:",
-                options=recommendations['Dish_Name'],
-                key="alternative_selectbox"
-            )
+                    input_data = {
+                        "Meal_ID": "dummy_id", "Cuisine_Type": cuisine, "Meal_Type": meal_type,
+                        "Dietary_Preference": diet, "Main_Ingredients": ingredients_str,
+                        "Difficulty_Level": difficulty, "Occasion_Type": occasion,
+                        "Calories_per_Serving": 0, "Protein_Content(g)": 0,
+                    }
+                    input_df = pd.DataFrame([input_data])
+                    
+                    pipeline = PredictPipeline()  # Initialize your pipeline here
+                    results = pipeline.predict(input_df, top_k=20)
+                    
+                    if results:
+                        results_df = pd.DataFrame(results)
+                        if 'Max_Calories' in results_df.columns:
+                            results_df = results_df.rename(columns={'Max_Calories': 'Calories_per_Serving'})
+                        
+                        filtered_results = results_df[
+                            results_df['Calories_per_Serving'].between(calorie_range[0], calorie_range[1])
+                        ].head(5)
+                        
+                        st.session_state.recommendations = filtered_results
+                    else:
+                        st.session_state.recommendations = pd.DataFrame()
 
-            if selected_dish_name:
-                original_dish_row = nutri_df[nutri_df['Dish_Name'] == selected_dish_name].iloc[0]
-                original_calories = original_dish_row['Calories_per_Serving']
-                original_ingredients = set(ing.strip() for ing in original_dish_row['Main_Ingredients'].split(','))
+                except CustomException as e:
+                    st.error(f"❌ A prediction error occurred: {e}")
+                    st.session_state.recommendations = None
+                except Exception as e:
+                    st.error(f"🐛 An unexpected error occurred: {e}")
+                    st.session_state.recommendations = None
 
-                def find_alternatives(row):
-                    current_ingredients = set(ing.strip() for ing in row['Main_Ingredients'].split(','))
-                    if len(original_ingredients.intersection(current_ingredients)) > 0 and row['Calories_per_Serving'] > original_calories:
-                        return True
-                    return False
+        # --- Display Results Section ---
+        if st.session_state.user_input_display:
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            st.markdown('<h2 class="sub-header">📋 Your Selected Preferences</h2>', unsafe_allow_html=True)
+            with st.container():
+                st.markdown('<div class="recommendation-card">', unsafe_allow_html=True)
+                for key, value in st.session_state.user_input_display.items():
+                    st.markdown(f"**{key}**: {value}")
+                st.markdown('</div>', unsafe_allow_html=True)
+            st.markdown('</div>', unsafe_allow_html=True)
 
-                alternatives_df = nutri_df[nutri_df.apply(find_alternatives, axis=1)]
-
-                if not alternatives_df.empty:
-                    highest_calorie_alt = alternatives_df.sort_values(by='Calories_per_Serving', ascending=False).iloc[0]
+        if st.session_state.recommendations is not None:
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            st.markdown('<h2 class="sub-header">🍛 Top Dish Suggestions For You!</h2>', unsafe_allow_html=True)
+            
+            recommendations = st.session_state.recommendations
+            if recommendations.empty:
+                st.info("ℹ️ No suggestions found for your criteria. Try adjusting the filters.")
+            else:
+                for index, row in recommendations.iterrows():
+                    dish_details = nutri_df[nutri_df['Dish_Name'] == row['Dish_Name']].iloc[0]
                     with st.container():
-                        st.markdown('<div class="result-card">', unsafe_allow_html=True)
-                        st.markdown(f"**Alternative Suggestion:** {highest_calorie_alt['Dish_Name']}")
-                        st.markdown(f"**Calories:** {highest_calorie_alt['Calories_per_Serving']} kcal (Original was {original_calories} kcal)")
-                        st.markdown(f"**Cuisine:** {highest_calorie_alt['Cuisine_Type']}")
-                        st.markdown(f"**Ingredients:** {highest_calorie_alt['Main_Ingredients']}")
+                        st.markdown('<div class="recommendation-card">', unsafe_allow_html=True)
+                        st.markdown(f"<h3>{dish_details['Dish_Name']}</h3>", unsafe_allow_html=True)
+                        st.markdown(f"**Calories**: {dish_details['Calories_per_Serving']} kcal")
+                        st.markdown(f"**Cuisine**: {dish_details['Cuisine_Type']}")
+                        st.markdown(f"**Ingredients**: {dish_details['Main_Ingredients']}")
                         st.markdown('</div>', unsafe_allow_html=True)
-                else:
-                    st.info("No higher-calorie alternative with similar ingredients was found in the dataset.")
+
+                st.markdown("---")
+                st.markdown('<h2 class="sub-header">💪 Want a More Indulgent Option?</h2>', unsafe_allow_html=True)
+                st.markdown("<p style='text-align: center; color: #f0f0f0;'>Select a dish to find a similar, higher-calorie alternative.</p>", unsafe_allow_html=True)
+
+                selected_dish_name = st.selectbox(
+                    "Choose a dish: 😋",
+                    options=recommendations['Dish_Name'],
+                    key="alternative_selectbox"
+                )
+
+                if selected_dish_name:
+                    original_dish_row = nutri_df[nutri_df['Dish_Name'] == selected_dish_name].iloc[0]
+                    original_calories = original_dish_row['Calories_per_Serving']
+                    original_ingredients = set(ing.strip() for ing in original_dish_row['Main_Ingredients'].split(','))
+
+                    def find_alternatives(row):
+                        current_ingredients = set(ing.strip() for ing in row['Main_Ingredients'].split(','))
+                        if len(original_ingredients.intersection(current_ingredients)) > 0 and row['Calories_per_Serving'] > original_calories:
+                            return True
+                        return False
+
+                    alternatives_df = nutri_df[nutri_df.apply(find_alternatives, axis=1)]
+
+                    if not alternatives_df.empty:
+                        highest_calorie_alt = alternatives_df.sort_values(by='Calories_per_Serving', ascending=False).iloc[0]
+                        with st.container():
+                            st.markdown('<div class="alert-card">', unsafe_allow_html=True)
+                            st.markdown(f"<h3>Alternative Suggestion: {highest_calorie_alt['Dish_Name']}</h3>", unsafe_allow_html=True)
+                            st.markdown(f"**Calories**: {highest_calorie_alt['Calories_per_Serving']} kcal (Original was {original_calories} kcal)")
+                            st.markdown(f"**Cuisine**: {highest_calorie_alt['Cuisine_Type']}")
+                            st.markdown(f"**Ingredients**: {highest_calorie_alt['Main_Ingredients']}")
+                            st.markdown('</div>', unsafe_allow_html=True)
+                    else:
+                        st.info("ℹ️ No higher-calorie alternative with similar ingredients was found in the dataset.")
+            st.markdown('</div>', unsafe_allow_html=True)
+    
+    elif st.session_state.current_page == "About":
+        st.markdown('<div class="card">', unsafe_allow_html=True)
+        st.markdown('<h2 class="sub-header">💡 About NutriPlan AI</h2>', unsafe_allow_html=True)
+        st.markdown("""
+            <p style='font-size: 1.1em; color: #f0f0f0; line-height: 1.6;'>
+                Welcome to <b>NutriPlan AI</b> 🤖, your intelligent companion for discovering delicious and healthy meals tailored to your preferences!
+                Our application leverages advanced data analysis and machine learning to provide personalized dish recommendations based on your selected criteria.
+            </p>
+            <p style='font-size: 1.1em; color: #f0f0f0; line-height: 1.6;'>
+                <h3>How It Works: ⚙️</h3>
+                <ul>
+                    <li><b>Input Your Preferences:</b> Select your desired cuisine type 🌍, meal type 🍽️, dietary preferences 🌱, difficulty level 🌶️, and available ingredients 🥕.</li>
+                    <li><b>Define Nutritional Goals:</b> Use the calorie slider 🔥 to narrow down suggestions that fit your dietary requirements.</li>
+                    <li><b>Get Instant Recommendations:</b> Our AI model 🧠 processes your inputs to suggest a list of dishes from our extensive database.</li>
+                    <li><b>Explore Alternatives:</b> Found a dish you like but want a more indulgent version? Our app can suggest higher-calorie alternatives with similar ingredients 🤤.</li>
+                </ul>
+            </p>
+            <p style='font-size: 1.1em; color: #f0f0f0; line-height: 1.6;'>
+                <h3>Our Mission: 🎯</h3>
+                To simplify meal planning and encourage healthy eating habits by making personalized, data-driven food recommendations accessible to everyone.
+                Whether you're looking for a quick weeknight dinner 🌙, a special occasion meal 🎉, or simply trying to manage your caloric intake, NutriPlan AI is here to help!
+            </p>
+        """, unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
+
+
+# Footer
+st.markdown("---")
+st.markdown("""
+<div style="text-align: center; color: #f0f0f0; font-size: 0.9em;">
+    <p>NutriPlan AI - Smart Dish Recommender | Helping you make informed nutritional choices</p>
+    <p>© 2023 Data-Driven Health Solutions</p>
+</div>
+""", unsafe_allow_html=True)
