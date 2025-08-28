@@ -75,8 +75,10 @@ nutri_df = load_data()
 
 # --- Image URLs for Dynamic Backgrounds (Publicly Hosted) ---
 # Using reliable publicly hosted URLs from Unsplash for guaranteed display
-recommender_bg_image_url = "https://images.unsplash.com/photo-1555939594-58d7ab87130f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80" # Colorful cooked meal
-about_bg_image_url = "https://images.unsplash.com/photo-1512621776951-a579b2d893f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80"     # Healthy fresh ingredients
+# --- Image URLs for Dynamic Backgrounds (Healthy Food Theme) ---
+recommender_bg_image_url = "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80"  # Plated colorful meal
+about_bg_image_url = "https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1400&q=80"        # Fresh fruits & vegetables
+
 
 
 if nutri_df is not None:
@@ -156,6 +158,7 @@ if nutri_df is not None:
                 )
 
             st.markdown('</div>', unsafe_allow_html=True)
+        
 
         # --- State Management Logic ---
         current_inputs = {
